@@ -168,6 +168,10 @@
       "drupal/password_policy": {
         "Issue #3032549: Fix Password policy module issue with saving constraint":
         "https://www.drupal.org/files/issues/2019-04-28/3032549-18.patch"
+      },
+      "drupal/link_attributes": {
+        "Issue #3050455: Array to string conversion in Drupal\\Core\\Template\\AttributeArray->__toString()":
+        "https://www.drupal.org/files/issues/2019-04-24/3050455-2.link_attributes.Array-to-string-conversion-in-DrupalCoreTemplateAttributeArraytoString.patch"
       }
     }
   }
