@@ -1,0 +1,4 @@
+d324_core.settings_index:
+  title: 'D324 settings'
+  route_name: d324_core.settings
+  base_route: d324_core.settings

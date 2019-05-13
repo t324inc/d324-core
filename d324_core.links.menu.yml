@@ -1,0 +1,11 @@
+d324_core.settings_index:
+  title: 'D324 settings'
+  description: 'Configuring D324 settings.'
+  parent: system.admin_config
+  route_name: d324_core.settings_index
+d324_core.general_settings:
+  title: 'D324 general settings'
+  description: 'Configuring D324 general settings.'
+  parent: d324_core.settings_index
+  route_name: d324_core.general_settings
+  weight: -1000

@@ -1,0 +1,14 @@
+d324_core.settings_index:
+  path: '/admin/config/d324'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'D324 settings'
+  requirements:
+    _permission: 'access d324 settings'
+d324_core.general_settings:
+  path: '/admin/config/d324/settings'
+  defaults:
+    _form: '\Drupal\d324_core\Form\D324GeneralSettingsForm'
+    _title: 'D324 general settings'
+  requirements:
+    _permission: 'access d324 settings'
