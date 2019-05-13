@@ -86,7 +86,7 @@
     "drupal/devel": "*",
     "drupal/update_helper": "1.0",
     "drupal/checklistapi": "~1.0",
-    "drupal/seo_checklist": "^3.1",
+    "drupal/seo_checklist": "^4.1",
     "drupal/username_enumeration_prevention": "~1.0",
     "drupal/password_policy": "3.0-alpha4",
     "drupal/honeypot": "~1.0",
