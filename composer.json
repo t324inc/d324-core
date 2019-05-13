@@ -121,7 +121,7 @@
     "patches": {
       "drupal/redis": {
         "Issue #2882796 Add support for persistent connections to redis host":
-        "https://www.drupal.org/files/issues/2018-11-13/2882796-persist-connection_0.patch",
+        "https://www.drupal.org/files/issues/2018-11-13/2882796-persist-connection_0.patch"
       },
       "drupal/coffee": {
         "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8":
