@@ -27,6 +27,7 @@ dependencies:
   - drupal:options
   - drupal:path
   - drupal:layout_discovery
+  - drupal:components
   - redis:redis
   - entity:entity
   - ctools:ctools

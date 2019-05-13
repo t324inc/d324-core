@@ -33,6 +33,7 @@
     "drupal/drupal-library-installer-plugin": "^0.3",
     "drupal/core": "^8.7.1",
     "drupal/redis": "^1.1",
+    "drupal/components": "^1.1",
     "drupal/radix": "^4.3",
     "drupal/adminimal_theme": "^1.4",
     "drupal/config_update": "~1.0",
