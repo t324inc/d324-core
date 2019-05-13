@@ -43,7 +43,6 @@ dependencies:
   - seo_checklist:seo_checklist
   - update_helper:update_helper
   - update_helper:update_helper_checklist
-  - swiftmailer:swiftmailer
 install:
   - contextual
   - diff
@@ -84,3 +83,4 @@ install:
   - login_destination
   - betterlogin
   - redis
+  - length_indicator

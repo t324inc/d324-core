@@ -1,0 +1,28 @@
+name: 'D324 Admin'
+description: 'Manage administration configurations.'
+type: module
+package: D324
+version: 8.x-7.x-dev
+core: 8.x
+project: d324_core
+dependencies:
+  - d324_core:d324_core
+  - drupal:shortcut
+  - drupal:toolbar
+install:
+  - views_bulk_operations
+  - views_bulk_edit
+  - admin_toolbar
+  - admin_toolbar_tools
+  - adminimal_admin_toolbar
+  - masquerade
+  - responsive_preview
+  - revision_log_default
+  - syslog
+  - update
+  - quickedit
+  - settings_tray
+  - entity_clone
+  - taxonomy_access_fix
+  - coffee
+  - length_indicator
