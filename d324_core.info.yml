@@ -27,6 +27,7 @@ dependencies:
   - drupal:options
   - drupal:path
   - drupal:layout_discovery
+  - redis:redis
   - entity:entity
   - ctools:ctools
   - ctools:ctools_block
@@ -82,3 +83,4 @@ install:
   - swiftmailer
   - login_destination
   - betterlogin
+  - redis
