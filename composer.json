@@ -1,7 +1,7 @@
 {
   "name": "t324inc/d324_core",
   "description": "This is the Core D324 feature. Provides core components required by other features.",
-  "type": "drupal-module",
+  "type": "d324-drupal-module",
   "homepage": "https://www.drupal.org/project/d324_core",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
