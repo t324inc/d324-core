@@ -28,6 +28,7 @@ dependencies:
   - drupal:path
   - drupal:layout_discovery
   - drupal:components
+  - drupal:webform
   - redis:redis
   - entity:entity
   - ctools:ctools
@@ -98,3 +99,11 @@ install:
   - metatag_twitter_cards
   - metatag_verification
   - metatag_views
+  - webform_ui
+  - webform_analysis
+  - webform_attachment
+  - webform_node
+  - webform_node_analysis
+  - webform_submission_log
+  - webform_views
+  - honeypot
