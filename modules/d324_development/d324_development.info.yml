@@ -14,6 +14,8 @@ install:
   - libraries_ui
   - tour_ui
   - tour_builder
+  - blazy_ui
+  - kint
 #uninstall:
 #  - migrate_drupal_ui 
 #  - dblog
@@ -28,5 +30,5 @@ install:
 #  - tour_builder
 #  - blazy_ui
 #  - devel_generate
-#  - kit
+#  - kint
 #  - slick_ui
