@@ -16,6 +16,7 @@ install:
   - tour_builder
   - blazy_ui
   - kint
+  - slick_ui
 #uninstall:
 #  - migrate_drupal_ui 
 #  - dblog
