@@ -102,8 +102,6 @@ install:
   - webform_ui
   - webform_analysis
   - webform_attachment
-  - webform_node
-  - webform_node_analysis
   - webform_submission_log
   - webform_views
   - honeypot
