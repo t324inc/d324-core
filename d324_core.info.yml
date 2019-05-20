@@ -105,3 +105,4 @@ install:
   - webform_submission_log
   - webform_views
   - honeypot
+  - username_enumeration_prevention
