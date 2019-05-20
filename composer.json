@@ -112,6 +112,7 @@
     "drupal/gutenberg": "1.x-dev",
     "drupal/swiftmailer": "^1.0-beta2",
     "drupal/addtoany": "^1.12",
+    "drupal/backup_migrate": "^4.0",
     "drupal/libraries": "~3.0"
   },
   "extra": {
