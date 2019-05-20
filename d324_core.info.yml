@@ -95,6 +95,7 @@ install:
   - metatag_facebook
   - metatag_favicons
   - metatag_open_graph
+  - metatag_page_manager
   - metatag_pinterest
   - metatag_twitter_cards
   - metatag_verification
