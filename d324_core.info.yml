@@ -107,3 +107,5 @@ install:
   - webform_views
   - honeypot
   - username_enumeration_prevention
+  - backup_migrate
+  - gutenberg
