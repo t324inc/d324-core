@@ -172,10 +172,6 @@
         "Issue #3050455: Array to string conversion in Drupal\\Core\\Template\\AttributeArray->__toString()":
         "https://www.drupal.org/files/issues/2019-04-24/3050455-2.link_attributes.Array-to-string-conversion-in-DrupalCoreTemplateAttributeArraytoString.patch"
       },
-      "drupal/blazy": {
-          "Issue #3054230: Images added via RTE with caption enabled not displayed":
-          "https://www.drupal.org/files/issues/2019-05-12/3054230-4-caption-compatibility.patch"
-      }
     }
   }
 }
