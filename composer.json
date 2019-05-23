@@ -142,10 +142,6 @@
         "Issue #2886350: Allow export of all site content.":
         "https://www.drupal.org/files/issues/default_content-export_all_content-2886350-2-D8.patch"
       },
-      "drupal/ctools": {
-        "Issue #2820783: Fix Block.php notices and warnings.":
-        "https://www.drupal.org/files/issues/2019-02-18/ctools-Block.php_notices_and_warnings-2820783-51-D8.patch"
-      },
       "drupal/ds": {
         "Issue #2920868: Fix fatal errors when we have missing layouts, on an update" :
         "https://www.drupal.org/files/issues/2019-03-03/2920868-12.patch"
@@ -175,6 +171,10 @@
       "drupal/link_attributes": {
         "Issue #3050455: Array to string conversion in Drupal\\Core\\Template\\AttributeArray->__toString()":
         "https://www.drupal.org/files/issues/2019-04-24/3050455-2.link_attributes.Array-to-string-conversion-in-DrupalCoreTemplateAttributeArraytoString.patch"
+      },
+      "drupal/blazy": {
+          "Issue #3054230: Images added via RTE with caption enabled not displayed":
+          "https://www.drupal.org/files/issues/2019-05-12/3054230-4-caption-compatibility.patch"
       }
     }
   }
