@@ -170,6 +170,10 @@
       "drupal/link_attributes": {
         "Issue #3050455: Array to string conversion in Drupal\\Core\\Template\\AttributeArray->__toString()":
         "https://www.drupal.org/files/issues/2019-04-24/3050455-2.link_attributes.Array-to-string-conversion-in-DrupalCoreTemplateAttributeArraytoString.patch"
+      },
+      "drupal/core": {
+        "Issue #3055516: Notice: Undefined index: target_bundles when new reference media field created":
+        "https://www.drupal.org/files/issues/2019-05-18/undefined_index_target_bundles-3055516-4.patch"
       }
     }
   }
