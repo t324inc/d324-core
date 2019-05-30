@@ -34,6 +34,7 @@
     "drupal/core": "^8.7.2",
     "drupal/redis": "^1.1",
     "drupal/components": "^1.1",
+    "drupal/radix": "^4.3",
     "drupal/adminimal_theme": "^1.4",
     "drupal/config_update": "~1.0",
     "drupal/config_filter": "~1.0",
@@ -108,11 +109,21 @@
     "drupal/color_field": "~2.0",
     "drupal/entity_reference_revisions": "~1.0",
     "drupal/viewsreference": "~2.0",
-    "drupal/gutenberg": "1.x-dev",
     "drupal/swiftmailer": "^1.0-beta2",
     "drupal/addtoany": "^1.12",
     "drupal/backup_migrate": "^4.0",
-    "drupal/libraries": "~3.0"
+    "drupal/libraries": "~3.0",
+    "drupal/simple_sitemap": "^3.1",
+    "drupal/createandcontinue": "^1.2",
+    "drupal/paragraphs": "^1.8",
+    "drupal/linkit": "^4.3",
+    "drupal/slick": "~2.0",
+    "drupal/slick_views": "~2.0",
+    "drupal/slick_paragraphs": "^2.0",
+    "drupal/pathauto": "^1.4",
+    "bower-asset/spectrum": "^1.8",
+    "bower-asset/colorbox": "^1.6",
+    "bower-asset/jquery-simple-color": "^1.2"
   },
   "extra": {
     "branch-alias": {
@@ -125,6 +136,10 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patches": {
+      "drupal/core": {
+        "Issue #3055516: Notice: Undefined index: target_bundles when new reference media field created":
+        "https://www.drupal.org/files/issues/2019-05-18/undefined_index_target_bundles-3055516-4.patch"
+      },
       "drupal/redis": {
         "Issue #2882796 Add support for persistent connections to redis host":
         "https://www.drupal.org/files/issues/2018-11-13/2882796-persist-connection_0.patch"
@@ -171,9 +186,17 @@
         "Issue #3050455: Array to string conversion in Drupal\\Core\\Template\\AttributeArray->__toString()":
         "https://www.drupal.org/files/issues/2019-04-24/3050455-2.link_attributes.Array-to-string-conversion-in-DrupalCoreTemplateAttributeArraytoString.patch"
       },
-      "drupal/core": {
-        "Issue #3055516: Notice: Undefined index: target_bundles when new reference media field created":
-        "https://www.drupal.org/files/issues/2019-05-18/undefined_index_target_bundles-3055516-4.patch"
+      "drupal/media_bulk_upload": {
+        "Issue #3033271 Undefined index":
+        "https://www.drupal.org/files/issues/2019-05-17/3033271-4.media_bulk_upload.Undefined-index-fileextensions-in-DrupalmediabulkuploadMediaTypeManagergetTargetFieldExtensions.patch"
+      },
+      "drupal/paragraphs": {
+        "Issue #3013171 LogicException Form errors cannot be set after form validation has finished":
+        "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch"
+      },
+      "drupal/color_field": {
+        "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev":
+        "https://www.drupal.org/files/issues/2018-11-07/no_functionality_of_almost_all_widgets-3002836-7.patch"
       }
     }
   }
