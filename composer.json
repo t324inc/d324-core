@@ -120,6 +120,8 @@
     "drupal/slick_views": "~2.0",
     "drupal/slick_paragraphs": "^2.0",
     "drupal/pathauto": "^1.4",
+    "drupal/google_analytics": "^3.0",
+    "drupal/menu_trail_by_path": "^1.0",
     "bower-asset/spectrum": "^1.8",
     "bower-asset/colorbox": "^1.6",
     "bower-asset/jquery-simple-color": "^1.2"
