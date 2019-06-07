@@ -134,6 +134,7 @@
       "bower-asset",
       "npm-asset"
     ],
+    "sort-packages": true,
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patches": {
