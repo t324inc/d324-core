@@ -163,9 +163,7 @@
       },
       "drupal/page_manager": {
         "Issue #2665328: Variants take entity label not the variant title":
-        "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch",
-        "Issue #3033057: Page Manager currently not working with CTools 3.1":
-        "https://www.drupal.org/files/issues/2019-02-26/3033057-ctools31-15.patch"
+        "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch"
       },
       "drupal/update_helper": {
         "Issue #3024165: [PATCH] Enhancements, Better messages for the unable to apply updates, drush command and removed the Mark all updates as successful on install":
