@@ -188,7 +188,9 @@
       },
       "drupal/paragraphs": {
         "Issue #3013171 LogicException Form errors cannot be set after form validation has finished":
-        "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch"
+        "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch",
+        "Issue #2907094 Make paragraphs module working with field_group version 3.x with support for the field_layout module":
+        "https://www.drupal.org/files/issues/2019-06-06/2907094_39.patch"
       },
       "drupal/color_field": {
         "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev":
