@@ -122,6 +122,7 @@
     "drupal/pathauto": "^1.4",
     "drupal/google_analytics": "^3.0",
     "drupal/menu_trail_by_path": "^1.0",
+    "drupal/entity_usage": "^2.0@alpha",
     "bower-asset/spectrum": "^1.8",
     "bower-asset/colorbox": "^1.6",
     "bower-asset/jquery-simple-color": "^1.2"
