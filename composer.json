@@ -145,7 +145,9 @@
     "patches": {
       "drupal/core": {
         "Issue #3055516: Notice: Undefined index: target_bundles when new reference media field created":
-        "https://www.drupal.org/files/issues/2019-05-18/undefined_index_target_bundles-3055516-4.patch"
+        "https://www.drupal.org/files/issues/2019-05-18/undefined_index_target_bundles-3055516-4.patch",
+        "Issue #2890758 Block visibility node type not working in preview mode":
+        "https://www.drupal.org/files/issues/2018-06-06/block_visibility_node_type_not_working_in_preview_mode-2890758-24.patch"
       },
       "drupal/redis": {
         "Issue #2882796 Add support for persistent connections to redis host":
