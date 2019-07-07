@@ -191,6 +191,10 @@
         "Issue #3033271 Undefined index":
         "https://www.drupal.org/files/issues/2019-05-17/3033271-4.media_bulk_upload.Undefined-index-fileextensions-in-DrupalmediabulkuploadMediaTypeManagergetTargetFieldExtensions.patch"
       },
+      "drupal/entity_reference_revisions": {
+          "Issue #3025709 Create new revision option is ignored when updating EntityReferenceRevisionsItem":
+          "https://www.drupal.org/files/issues/2019-06-27/3025709-30.patch"
+      },
       "drupal/paragraphs": {
         "Issue #3013171 LogicException Form errors cannot be set after form validation has finished":
         "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch",
