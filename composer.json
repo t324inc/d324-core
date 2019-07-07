@@ -114,7 +114,7 @@
     "drupal/libraries": "~3.0",
     "drupal/simple_sitemap": "^3.1",
     "drupal/createandcontinue": "^1.2",
-    "drupal/paragraphs": "^1.8",
+    "drupal/paragraphs": "^1.x-dev",
     "drupal/geocoder": "^2.0",
     "drupal/geofield": "^1.0",
     "drupal/styled_google_map": "^2.0",
@@ -195,9 +195,7 @@
         "Issue #3013171 LogicException Form errors cannot be set after form validation has finished":
         "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch",
         "Issue #2907094 Make paragraphs module working with field_group version 3.x with support for the field_layout module":
-        "https://www.drupal.org/files/issues/2019-06-06/2907094_39.patch",
-        "Issue #3025709 Create new revision option is ignored when updating EntityReferenceRevisionsItem":
-        "https://www.drupal.org/files/issues/2019-06-27/3025709-30.patch"
+        "https://www.drupal.org/files/issues/2019-06-06/2907094_39.patch"
       },
       "drupal/color_field": {
         "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev":
