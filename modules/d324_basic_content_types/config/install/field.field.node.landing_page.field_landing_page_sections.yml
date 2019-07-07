@@ -1,0 +1,68 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_page_sections
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.image_slide
+    - paragraphs.paragraphs_type.side_by_side_column
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_landing_page_sections
+field_name: field_landing_page_sections
+entity_type: node
+bundle: landing_page
+label: 'Landing Page Sections'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      image_slide: image_slide
+      side_by_side_column: side_by_side_column
+    target_bundles_drag_drop:
+      breakout_container:
+        weight: 14
+        enabled: false
+      content_columns:
+        weight: 15
+        enabled: false
+      embedded_media:
+        weight: 16
+        enabled: false
+      embedded_view:
+        weight: 17
+        enabled: false
+      embedded_webform:
+        weight: 18
+        enabled: false
+      feature_box:
+        weight: 19
+        enabled: false
+      from_library:
+        weight: 20
+        enabled: false
+      image_slide:
+        enabled: true
+        weight: 21
+      jumbotron:
+        weight: 22
+        enabled: false
+      separator:
+        weight: 23
+        enabled: false
+      side_by_side_column:
+        enabled: true
+        weight: 24
+      side_by_side_features:
+        weight: 25
+        enabled: false
+      simple_block:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

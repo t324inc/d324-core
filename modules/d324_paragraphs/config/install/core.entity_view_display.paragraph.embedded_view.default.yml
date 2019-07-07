@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_view.field_embedded_view
+    - field.field.paragraph.embedded_view.field_heading
+    - field.field.paragraph.embedded_view.field_pre_heading
+    - field.field.paragraph.embedded_view.field_sub_heading
+    - paragraphs.paragraphs_type.embedded_view
+  module:
+    - viewsreference
+id: paragraph.embedded_view.default
+targetEntityType: paragraph
+bundle: embedded_view
+mode: default
+content:
+  field_embedded_view:
+    weight: 3
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_heading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pre_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sub_heading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

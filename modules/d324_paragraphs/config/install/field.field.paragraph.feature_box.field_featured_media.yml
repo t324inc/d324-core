@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_featured_media
+    - media.type.image
+    - media.type.instagram
+    - media.type.remote_video
+    - media.type.tweet
+    - media.type.video
+    - paragraphs.paragraphs_type.feature_box
+id: paragraph.feature_box.field_featured_media
+field_name: field_featured_media
+entity_type: paragraph
+bundle: feature_box
+label: 'Featured Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      instagram: instagram
+      remote_video: remote_video
+      tweet: tweet
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

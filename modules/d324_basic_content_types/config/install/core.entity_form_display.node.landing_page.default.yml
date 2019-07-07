@@ -1,0 +1,115 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_header_image
+    - field.field.node.landing_page.field_landing_page_sections
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_yoast_seo
+    - node.type.landing_page
+  module:
+    - media_library
+    - metatag
+    - paragraphs
+    - path
+    - yoast_seo
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_header_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_landing_page_sections:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: 'Landing Page Section'
+      title_plural: 'Landing Page Sections'
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_yoast_seo:
+    weight: 10
+    settings:
+      body: body
+    third_party_settings: {  }
+    type: yoast_seo_widget
+    region: content
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_google_map
+    - paragraphs.paragraphs_type.embedded_google_map
+  module:
+    - geocoder_field
+    - geofield
+third_party_settings:
+  geocoder_field:
+    method: source
+    weight: 0
+    geocode_field: field_google_map_address
+    reverse_geocode_field: ''
+    hidden: true
+    disabled: false
+    plugins:
+      - googlemaps
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: empty
+      status_message: true
+      log: true
+id: paragraph.embedded_google_map.field_google_map
+field_name: field_google_map
+entity_type: paragraph
+bundle: embedded_google_map
+label: 'Google Map'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: separator
+label: Separator
+icon_uuid: null
+description: 'A separator/spacer with optional horizontal divider'
+behavior_plugins: {  }

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_media.field_media
+    - paragraphs.paragraphs_type.embedded_media
+  module:
+    - media_library
+id: paragraph.embedded_media.default
+targetEntityType: paragraph
+bundle: embedded_media
+mode: default
+content:
+  field_media:
+    weight: 1
+    settings:
+      media_types:
+        - image
+        - video
+        - remote_video
+        - file
+        - instagram
+        - tweet
+        - audio
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true

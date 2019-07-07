@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_columns
+label: 'Content Columns'
+icon_uuid: null
+description: 'Equal width columns to be used in a landing page'
+behavior_plugins: {  }

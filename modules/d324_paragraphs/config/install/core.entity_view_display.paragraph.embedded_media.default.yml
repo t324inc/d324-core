@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_media.field_media
+    - paragraphs.paragraphs_type.embedded_media
+  module:
+    - ds
+id: paragraph.embedded_media.default
+targetEntityType: paragraph
+bundle: embedded_media
+mode: default
+content:
+  field_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: large
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

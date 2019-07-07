@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: jumbotron
+label: Jumbotron
+icon_uuid: null
+description: 'A prominent, billboard-style vehicle for delivering a short, powerful message'
+behavior_plugins: {  }

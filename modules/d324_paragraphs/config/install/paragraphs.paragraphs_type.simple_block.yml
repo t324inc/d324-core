@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: simple_block
+label: 'Simple Block'
+icon_uuid: null
+description: 'A simple paragraph block consisting of a heading, sub-heading, text content, link and image'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_slide
+label: 'Image Slide'
+icon_uuid: null
+description: 'An image for use in a Hero Slider with space for a background image and overlay text'
+behavior_plugins: {  }

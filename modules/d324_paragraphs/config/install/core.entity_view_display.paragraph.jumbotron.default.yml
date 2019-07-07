@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron.field_background_color
+    - field.field.paragraph.jumbotron.field_background_color_2
+    - field.field.paragraph.jumbotron.field_background_image
+    - field.field.paragraph.jumbotron.field_calls_to_actions
+    - field.field.paragraph.jumbotron.field_hero_text
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - ds
+    - link
+id: paragraph.jumbotron.default
+targetEntityType: paragraph
+bundle: jumbotron
+mode: default
+content:
+  field_background_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: background_image
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+  field_calls_to_actions:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_hero_text:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_background_color: true
+  field_background_color_2: true

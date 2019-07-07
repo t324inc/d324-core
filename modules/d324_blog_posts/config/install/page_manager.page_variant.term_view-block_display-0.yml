@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.term_view
+    - views.view.blog
+  module:
+    - views
+id: term_view-block_display-0
+label: 'Blog Categories'
+variant: block_display
+variant_settings:
+  blocks:
+    e1567ddf-9ab1-47ba-84dd-13e0a76788f8:
+      id: 'views_block:blog-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: e1567ddf-9ab1-47ba-84dd-13e0a76788f8
+      context_mapping: {  }
+  id: block_display
+  uuid: 3710d81f-97bd-4176-8538-0a8472e93d01
+  label: null
+  weight: 0
+  page_title: ''
+page: term_view
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

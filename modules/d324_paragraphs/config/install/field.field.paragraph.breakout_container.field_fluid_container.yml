@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fluid_container
+    - paragraphs.paragraphs_type.breakout_container
+id: paragraph.breakout_container.field_fluid_container
+field_name: field_fluid_container
+entity_type: paragraph
+bundle: breakout_container
+label: 'Use Fluid Container'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

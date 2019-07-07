@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_slider
+    - field.field.block_content.hero_slider.field_hero_slides
+    - field.field.block_content.hero_slider.field_style
+  module:
+    - advanced_text_formatter
+    - maxlength
+    - paragraphs
+id: block_content.hero_slider.default
+targetEntityType: block_content
+bundle: hero_slider
+mode: default
+content:
+  field_hero_slides:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: 'Hero Slide'
+      title_plural: 'Hero Slides'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: image_slide
+    third_party_settings: {  }
+    region: content
+  field_style:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+      advanced_text_formatter:
+        show_token_tree: 0
+hidden: {  }

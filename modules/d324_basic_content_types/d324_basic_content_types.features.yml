@@ -1,0 +1,16 @@
+bundle: d324
+excluded:
+  - responsive_preview.device.galaxy_s9_
+  - responsive_preview.device.iphone_8_
+  - field.field.node.basic_page.field_meta_tags
+  - field.field.node.basic_page.field_yoast_seo
+  - field.field.node.landing_page.field_meta_tags
+  - field.field.node.landing_page.field_yoast_seo
+  - field.field.block_content.basic.body
+  - core.base_field_override.block_content.basic.changed
+  - core.base_field_override.block_content.basic.info
+  - block.block.newslettersignupblock
+  - block_content.type.basic
+  - core.entity_form_display.block_content.basic.default
+  - core.entity_view_display.block_content.basic.default
+required: true

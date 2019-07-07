@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_view.field_embedded_view
+    - field.field.paragraph.embedded_view.field_heading
+    - field.field.paragraph.embedded_view.field_pre_heading
+    - field.field.paragraph.embedded_view.field_sub_heading
+    - paragraphs.paragraphs_type.embedded_view
+  module:
+    - viewsreference
+id: paragraph.embedded_view.default
+targetEntityType: paragraph
+bundle: embedded_view
+mode: default
+content:
+  field_embedded_view:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pre_heading:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sub_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

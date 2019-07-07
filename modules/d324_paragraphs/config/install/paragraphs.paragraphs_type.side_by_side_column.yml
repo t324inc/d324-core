@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: side_by_side_column
+label: 'Side-by-Side Column'
+icon_uuid: null
+description: 'Side-by-side columns of content containing an image, heading, text, and call-to-action button'
+behavior_plugins: {  }

@@ -1,0 +1,77 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feature_box.field_call_to_action_buttons
+    - field.field.paragraph.feature_box.field_description
+    - field.field.paragraph.feature_box.field_direction
+    - field.field.paragraph.feature_box.field_featured_media
+    - field.field.paragraph.feature_box.field_heading
+    - field.field.paragraph.feature_box.field_main_link
+    - image.style.d12
+    - paragraphs.paragraphs_type.feature_box
+  module:
+    - ds
+    - link
+    - media
+    - text
+id: paragraph.feature_box.default
+targetEntityType: paragraph
+bundle: feature_box
+mode: default
+content:
+  field_call_to_action_buttons:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_featured_media:
+    type: media_thumbnail
+    weight: 3
+    label: hidden
+    settings:
+      image_style: d12
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_main_link:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_direction: true

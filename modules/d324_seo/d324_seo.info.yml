@@ -1,0 +1,15 @@
+name: 'D324 SEO'
+description: 'SEO related fields and configuration for D324 sites'
+type: module
+core: 8.x
+dependencies:
+  - d324_basic_content_types
+  - d324_blog_posts
+  - field
+  - metatag
+  - node
+  - pathauto
+  - responsive_preview
+  - yoast_seo
+version: 8.x-1.0
+package: D324

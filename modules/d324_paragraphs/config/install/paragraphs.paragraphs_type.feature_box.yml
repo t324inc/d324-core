@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: feature_box
+label: 'Feature Box'
+icon_uuid: null
+description: 'A stylistic two column display that features a media item on one side and freeform content on the other'
+behavior_plugins: {  }

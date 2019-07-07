@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_slider
+    - field.storage.block_content.field_hero_slides
+    - paragraphs.paragraphs_type.image_slide
+  module:
+    - entity_reference_revisions
+id: block_content.hero_slider.field_hero_slides
+field_name: field_hero_slides
+entity_type: block_content
+bundle: hero_slider
+label: 'Hero Slides'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_slide: image_slide
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 17
+        enabled: false
+      bp_accordion_section:
+        weight: 18
+        enabled: false
+      bp_blank:
+        weight: 19
+        enabled: false
+      bp_block:
+        weight: 20
+        enabled: false
+      bp_carousel:
+        weight: 21
+        enabled: false
+      bp_column_wrapper:
+        weight: 22
+        enabled: false
+      bp_columns:
+        weight: 23
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 24
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 25
+        enabled: false
+      bp_image:
+        weight: 26
+        enabled: false
+      bp_modal:
+        weight: 27
+        enabled: false
+      bp_simple:
+        weight: 28
+        enabled: false
+      bp_tab_section:
+        weight: 29
+        enabled: false
+      bp_tabs:
+        weight: 30
+        enabled: false
+      bp_view:
+        weight: 31
+        enabled: false
+      image_slide:
+        enabled: true
+        weight: 32
+field_type: entity_reference_revisions

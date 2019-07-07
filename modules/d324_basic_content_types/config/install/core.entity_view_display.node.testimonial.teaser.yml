@@ -1,0 +1,26 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.field_attribution_name
+    - field.field.node.testimonial.field_attribution_title
+    - field.field.node.testimonial.field_testimonial_quote
+    - node.type.testimonial
+  module:
+    - user
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_attribution_name: true
+  field_attribution_title: true
+  field_testimonial_quote: true

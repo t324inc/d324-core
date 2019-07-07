@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: breakout_container
+label: 'Breakout Container'
+icon_uuid: null
+description: 'A special container that can stretch across the full horizontal width of the page, breaking out of the normal container width of the site.  Other paragraph types are placed inside of the container, either boxed or full width.'
+behavior_plugins: {  }

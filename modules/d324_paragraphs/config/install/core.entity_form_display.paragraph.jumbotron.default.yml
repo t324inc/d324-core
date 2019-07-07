@@ -1,0 +1,123 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron.field_background_color
+    - field.field.paragraph.jumbotron.field_background_color_2
+    - field.field.paragraph.jumbotron.field_background_image
+    - field.field.paragraph.jumbotron.field_calls_to_actions
+    - field.field.paragraph.jumbotron.field_hero_text
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - color_field
+    - field_group
+    - link_attributes
+    - media_library
+third_party_settings:
+  field_group:
+    group_jumbotron_tabs:
+      children:
+        - group_jumbotron_content
+        - group_background_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Jumbotron Tabs'
+      region: content
+    group_jumbotron_content:
+      children:
+        - field_hero_text
+        - field_calls_to_actions
+      parent_name: group_jumbotron_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: 'Jumbotron Content'
+      region: content
+    group_background_settings:
+      children:
+        - field_background_image
+        - field_background_color
+        - field_background_color_2
+      parent_name: group_jumbotron_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Background Settings'
+      region: content
+id: paragraph.jumbotron.default
+targetEntityType: paragraph
+bundle: jumbotron
+mode: default
+content:
+  field_background_color:
+    type: color_field_widget_spectrum
+    weight: 5
+    region: content
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+  field_background_color_2:
+    type: color_field_widget_spectrum
+    weight: 6
+    region: content
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+  field_background_image:
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_calls_to_actions:
+    type: link_attributes
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: false
+        name: false
+        target: true
+        rel: true
+        class: true
+        accesskey: false
+    third_party_settings: {  }
+  field_hero_text:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_slide.field_call_to_action_buttons
+    - field.field.paragraph.image_slide.field_hero_slider_media
+    - field.field.paragraph.image_slide.field_hero_slider_text
+    - paragraphs.paragraphs_type.image_slide
+  module:
+    - link
+id: paragraph.image_slide.default
+targetEntityType: paragraph
+bundle: image_slide
+mode: default
+content:
+  field_call_to_action_buttons:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hero_slider_media:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hero_slider_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

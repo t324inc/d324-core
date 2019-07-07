@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: embedded_view
+label: 'Embedded View'
+icon_uuid: null
+description: 'Embed a view into the page'
+behavior_plugins: {  }

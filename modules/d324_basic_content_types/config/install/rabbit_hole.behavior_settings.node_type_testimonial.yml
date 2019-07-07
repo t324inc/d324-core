@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_testimonial
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

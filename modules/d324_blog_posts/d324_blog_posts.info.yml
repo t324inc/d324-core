@@ -1,0 +1,26 @@
+name: 'D324 Blog Posts'
+description: 'Provides Blog Post content type and related config for D324 sites'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - d324_basic_content_types
+  - d324_seo
+  - ds
+  - field
+  - menu_ui
+  - metatag
+  - node
+  - page_manager
+  - path
+  - pathauto
+  - rabbit_hole
+  - responsive_preview
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+  - yoast_seo
+version: 8.x-1.0
+package: D324

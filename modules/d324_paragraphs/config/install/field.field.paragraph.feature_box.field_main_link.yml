@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_link
+    - paragraphs.paragraphs_type.feature_box
+  module:
+    - link
+id: paragraph.feature_box.field_main_link
+field_name: field_main_link
+entity_type: paragraph
+bundle: feature_box
+label: 'Main Link'
+description: 'Optional main link.  The main image and the heading text will be linked to this destination.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

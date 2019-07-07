@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.header_images
+  module:
+    - media_library
+id: entity_subqueue.header_images.default
+targetEntityType: entity_subqueue
+bundle: header_images
+mode: default
+content:
+  items:
+    type: media_library_widget
+    weight: 5
+    settings:
+      media_types: {  }
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

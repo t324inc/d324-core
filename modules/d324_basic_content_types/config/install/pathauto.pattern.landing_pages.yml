@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: landing_pages
+label: 'Landing Pages'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:url:path]/[node:title]'
+selection_criteria:
+  990f4903-31d8-468f-a129-7a6c0db8b20c:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 990f4903-31d8-468f-a129-7a6c0db8b20c
+selection_logic: and
+weight: -10
+relationships: {  }

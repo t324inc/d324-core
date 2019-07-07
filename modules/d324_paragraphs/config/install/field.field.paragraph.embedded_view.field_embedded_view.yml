@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embedded_view
+    - paragraphs.paragraphs_type.embedded_view
+  module:
+    - viewsreference
+id: paragraph.embedded_view.field_embedded_view
+field_name: field_embedded_view
+entity_type: paragraph
+bundle: embedded_view
+label: 'Embedded View'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    default: default
+    page: page
+    block: block
+    feed: 0
+    entity_browser: 0
+  preselect_views:
+    block_content: 0
+    content: 0
+    events_index: 0
+    files: 0
+    frontpage: 0
+    locked_content: 0
+    media: 0
+    media_browsers: 0
+    media_library: 0
+    monday_meditations: 0
+    taxonomy_term: 0
+    testimonial_slider: 0
+    upcoming_events: 0
+    user_admin_people: 0
+  enabled_settings:
+    argument: argument
+    limit: limit
+    title: title
+    pager: pager
+    offset: 0
+field_type: viewsreference

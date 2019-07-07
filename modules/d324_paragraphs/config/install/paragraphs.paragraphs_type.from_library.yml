@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: from_library
+label: 'From library'
+icon_uuid: null
+description: 'Reuse an existing paragraph from your library'
+behavior_plugins: {  }

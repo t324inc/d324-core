@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_categories
+    - field.field.node.blog_post.field_meta_tags
+    - field.field.node.blog_post.field_tags
+    - field.field.node.blog_post.field_yoast_seo
+    - node.type.blog_post
+  module:
+    - ds
+    - text
+    - user
+id: node.blog_post.teaser
+targetEntityType: node
+bundle: blog_post
+mode: teaser
+content:
+  addtoany:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categories:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  field_meta_tags: true
+  field_tags: true
+  field_yoast_seo: true
+  links: true

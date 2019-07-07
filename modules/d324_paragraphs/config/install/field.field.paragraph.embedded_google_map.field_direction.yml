@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_direction
+    - paragraphs.paragraphs_type.embedded_google_map
+  module:
+    - options
+id: paragraph.embedded_google_map.field_direction
+field_name: field_direction
+entity_type: paragraph
+bundle: embedded_google_map
+label: 'Map Placement'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

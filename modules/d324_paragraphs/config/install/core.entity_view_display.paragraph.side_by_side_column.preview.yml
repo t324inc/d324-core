@@ -1,0 +1,98 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.side_by_side_column.field_call_to_action
+    - field.field.paragraph.side_by_side_column.field_heading
+    - field.field.paragraph.side_by_side_column.field_media_image
+    - field.field.paragraph.side_by_side_column.field_text_content
+    - image.style.d04
+    - paragraphs.paragraphs_type.side_by_side_column
+    - responsive_image.styles.d04
+  module:
+    - blazy
+    - ds
+    - text
+id: paragraph.side_by_side_column.preview
+targetEntityType: paragraph
+bundle: side_by_side_column
+mode: preview
+content:
+  field_heading:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: d04
+      responsive_image_style: d04
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
+      view_mode: default
+      box_caption_custom: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_media_image: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: blazy_media
+    region: content
+  field_text_content:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_call_to_action: true

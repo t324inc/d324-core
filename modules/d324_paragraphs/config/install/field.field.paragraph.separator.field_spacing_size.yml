@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing_size
+    - paragraphs.paragraphs_type.separator
+  module:
+    - options
+id: paragraph.separator.field_spacing_size
+field_name: field_spacing_size
+entity_type: paragraph
+bundle: separator
+label: 'Spacing Size'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 6
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

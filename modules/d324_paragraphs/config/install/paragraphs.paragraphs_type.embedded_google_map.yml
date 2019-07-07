@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: embedded_google_map
+label: 'Embedded Google Map'
+icon_uuid: null
+description: 'A stylish embedded Google Map with extensive customization options, get directions integration, marker dropping and more'
+behavior_plugins: {  }

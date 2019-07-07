@@ -1,0 +1,45 @@
+name: 'D324 Basic Content Types'
+description: 'Provides basic node content types and related configuration for D324 sites.'
+type: module
+core: 8.x
+dependencies:
+  - advanced_text_formatter
+  - block
+  - block_class
+  - block_content
+  - d324_blog_posts
+  - d324_paragraphs
+  - d324_seo
+  - ds
+  - entity_reference_revisions
+  - entityqueue
+  - field
+  - file
+  - image
+  - linkit
+  - maxlength
+  - media
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - paragraphs
+  - path
+  - pathauto
+  - rabbit_hole
+  - responsive_preview
+  - simple_sitemap
+  - slick
+  - slick_paragraphs
+  - slick_views
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+  - views_bootstrap
+  - webform
+  - yoast_seo
+version: 8.x-1.0
+package: D324

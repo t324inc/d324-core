@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.header_images
+  module:
+    - ds
+id: entity_subqueue.header_images.default
+targetEntityType: entity_subqueue
+bundle: header_images
+mode: default
+content:
+  items:
+    label: hidden
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    settings:
+      view_mode: se2e_4_1
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: '1'
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  title: true

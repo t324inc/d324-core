@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_slider
+    - field.field.block_content.hero_slider.field_hero_slides
+    - field.field.block_content.hero_slider.field_style
+  module:
+    - ds
+    - slick_paragraphs
+id: block_content.hero_slider.default
+targetEntityType: block_content
+bundle: hero_slider
+mode: default
+content:
+  field_hero_slides:
+    type: slick_paragraphs_vanilla
+    weight: 0
+    label: hidden
+    settings:
+      optionset: default
+      skin: fullwidth
+      view_mode: default
+      cache: 21600
+      override: true
+      overridables:
+        autoplay: autoplay
+        infinite: infinite
+        arrows: '0'
+        dots: '0'
+        draggable: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      current_view_mode: default
+      skin_arrows: ''
+      skin_dots: ''
+      style: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+hidden:
+  field_style: true

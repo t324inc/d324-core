@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.separator.field_include_horizontal_divider
+    - field.field.paragraph.separator.field_spacing_size
+    - paragraphs.paragraphs_type.separator
+id: paragraph.separator.default
+targetEntityType: paragraph
+bundle: separator
+mode: default
+content: {  }
+hidden:
+  field_include_horizontal_divider: true
+  field_spacing_size: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_calls_to_actions
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - link
+id: paragraph.jumbotron.field_calls_to_actions
+field_name: field_calls_to_actions
+entity_type: paragraph
+bundle: jumbotron
+label: 'Calls to Action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link
