@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_content
+    - paragraphs.paragraphs_type.quotation
+  module:
+    - text
+id: paragraph.quotation.field_text_content
+field_name: field_text_content
+entity_type: paragraph
+bundle: quotation
+label: 'Quotation Text'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

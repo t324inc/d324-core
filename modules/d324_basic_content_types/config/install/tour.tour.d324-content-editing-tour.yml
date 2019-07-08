@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - d324_core
+id: d324-content-editing-tour
+label: 'D324 Content Editing Tour'
+module: d324_core
+routes:
+  -
+    route_name: entity.node.canonical
+tips:
+  show-content-menu:
+    id: show-content-menu
+    plugin: text
+    label: 'Manage Content'
+    weight: -100
+    attributes:
+      data-class: toolbar-icon-system-admin-content
+    body: "Visit the Content manager to search, edit, and review all of the content and media on your site in one place.\r\nUse the \"Add Content\" drop-down to create new content from the available types."
+    location: bottom
+  manage-account:
+    id: manage-account
+    plugin: text
+    label: 'Manage Account'
+    weight: -100
+    attributes:
+      data-id: toolbar-item-user
+    body: 'Click on your user name to visit your user profile, to edit your email address, password, and other user profile information.'
+    location: bottom
+  edit-tab:
+    id: edit-tab
+    plugin: text
+    label: 'Edit Tab'
+    weight: -100
+    attributes:
+      data-class: nav-tab-edit
+    body: 'Click the "Edit" tab in your admin tab menu to go directly to the full administrative editor for the current page you''re viewing.'
+    location: bottom
+  revisions-tab:
+    id: revisions-tab
+    plugin: text
+    label: 'Revisions Tab'
+    weight: -100
+    attributes:
+      data-class: nav-tab-revisions
+    body: 'Click the Revisions button to see all past saved versions of this page, view past versions of the page, or revert the page back to a previous revision.'
+    location: bottom
+  front-end-edits:
+    id: front-end-edits
+    plugin: text
+    label: 'Front-End Edits'
+    weight: -100
+    attributes: null
+    body: 'Move your mouse over a content section (also called a "Paragraph") to reveal the buttons for quick, front-end editing.  Most complex pages are built by adding a series of simple Paragraph types to the page.'
+    location: top
+  ways-to-edit:
+    id: ways-to-edit
+    plugin: text
+    label: 'Ways to Edit'
+    weight: -100
+    attributes: null
+    body: "You can use the content manager to find and edit content, you can browse the site and use the edit tabs, or you can edit right in place using the front-end editing.\r\nThe choice is yours!"
+    location: top
+  publishing-workflow:
+    id: publishing-workflow
+    plugin: text
+    label: 'Publishing Workflow'
+    weight: -100
+    attributes:
+      data-class: moderation-sidebar-toolbar-tab
+    body: "Click on the publishing workflow tab in order to manage drafts and the publishing status of the current page.\r\nChoose \"Create New Draft\" to begin making changes to an existing page without making those changes live."
+    location: right
+  responsive-preview:
+    id: responsive-preview
+    plugin: text
+    label: 'Responsive Preview'
+    weight: -100
+    attributes:
+      data-id: responsive-preview-toolbar-tab
+    body: 'Use the responsive preview toolbar to get an idea of what your page will look like on variously sized popular devices like tablets and smart phones.'
+    location: right

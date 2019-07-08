@@ -9,6 +9,7 @@ dependencies:
   - block_content
   - content_moderation
   - d324_blog_posts
+  - d324_core
   - d324_paragraphs
   - d324_seo
   - ds
@@ -38,6 +39,7 @@ dependencies:
   - system
   - taxonomy
   - text
+  - tour
   - user
   - views
   - views_bootstrap

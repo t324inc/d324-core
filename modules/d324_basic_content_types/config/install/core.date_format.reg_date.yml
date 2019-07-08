@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: reg_date
+label: 'Reg Date'
+locked: false
+pattern: 'M jS, Y'

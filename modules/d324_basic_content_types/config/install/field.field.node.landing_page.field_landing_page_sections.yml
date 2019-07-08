@@ -27,45 +27,48 @@ settings:
       side_by_side_column: side_by_side_column
     target_bundles_drag_drop:
       simple_block:
-        weight: -29
+        weight: -31
         enabled: false
       side_by_side_features:
-        weight: -28
+        weight: -30
         enabled: false
       jumbotron:
-        weight: -27
+        weight: -29
         enabled: false
       feature_box:
-        weight: -26
+        weight: -28
+        enabled: false
+      quotation:
+        weight: -27
         enabled: false
       separator:
-        weight: -25
+        weight: -26
         enabled: false
       embedded_media:
-        weight: -24
+        weight: -25
         enabled: false
       embedded_google_map:
-        weight: -23
+        weight: -24
         enabled: false
       embedded_webform:
-        weight: -22
+        weight: -23
         enabled: false
       embedded_view:
-        weight: -21
+        weight: -22
         enabled: false
       breakout_container:
-        weight: -20
+        weight: -21
         enabled: false
       content_columns:
-        weight: -19
+        weight: -20
         enabled: false
       from_library:
-        weight: -18
+        weight: -19
         enabled: false
       image_slide:
         enabled: true
-        weight: -17
+        weight: -18
       side_by_side_column:
         enabled: true
-        weight: -16
+        weight: -17
 field_type: entity_reference_revisions
