@@ -1,8 +1,15 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:a0e60aa2-fa4d-4a3a-a702-aa569c2ca8fb'
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: embedded_media
 label: 'Embedded Media'
-icon_uuid: null
+icon_uuid: a0e60aa2-fa4d-4a3a-a702-aa569c2ca8fb
 description: 'A media item to embed into the section'
 behavior_plugins: {  }

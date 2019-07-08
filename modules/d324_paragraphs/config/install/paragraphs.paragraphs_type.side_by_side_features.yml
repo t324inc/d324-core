@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:2e283a75-87f3-4b1b-abc5-e642d7678f80'
   module:
     - paragraphs_library
 third_party_settings:
@@ -8,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: side_by_side_features
 label: 'Side-by-Side Features'
-icon_uuid: null
+icon_uuid: 2e283a75-87f3-4b1b-abc5-e642d7678f80
 description: 'Side-by-side columns of content containing an image, heading, text, and call-to-action button'
 behavior_plugins: {  }

@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:0718588d-246f-4c27-b83a-d2cc780005ac'
 id: from_library
 label: 'From library'
-icon_uuid: null
+icon_uuid: 0718588d-246f-4c27-b83a-d2cc780005ac
 description: 'Reuse an existing paragraph from your library'
 behavior_plugins: {  }

@@ -181,7 +181,7 @@ display:
         relationships: false
         arguments: false
         empty: false
-        footer: false
+        footer: true
       arguments:
         nid:
           id: nid
@@ -231,18 +231,6 @@ display:
           view_to_insert: 'header_image_block:block_1'
           inherit_arguments: false
           plugin_id: view
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content: '<div class="page-title-container container"><h1>[current-page:title]</h1></div>'
-          plugin_id: text_custom
     cache_metadata:
       max-age: 0
       contexts:

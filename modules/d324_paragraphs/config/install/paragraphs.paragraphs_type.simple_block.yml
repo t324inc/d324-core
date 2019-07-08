@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:a6f6fac4-a85f-4885-8ede-d4b2935234f1'
   module:
     - paragraphs_library
 third_party_settings:
@@ -8,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: simple_block
 label: 'Simple Block'
-icon_uuid: null
+icon_uuid: a6f6fac4-a85f-4885-8ede-d4b2935234f1
 description: 'A simple paragraph block consisting of a heading, sub-heading, text content, link and image'
 behavior_plugins: {  }

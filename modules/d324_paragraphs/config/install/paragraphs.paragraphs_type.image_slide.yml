@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:96fedcdf-493c-45ae-b3f7-c0dc81a697b8'
 id: image_slide
 label: 'Image Slide'
-icon_uuid: null
+icon_uuid: 96fedcdf-493c-45ae-b3f7-c0dc81a697b8
 description: 'An image for use in a Hero Slider with space for a background image and overlay text'
 behavior_plugins: {  }

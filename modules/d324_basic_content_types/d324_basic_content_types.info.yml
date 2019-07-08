@@ -8,7 +8,6 @@ dependencies:
   - block_class
   - block_content
   - content_moderation
-  - moderation_sidebar
   - d324_blog_posts
   - d324_paragraphs
   - d324_seo
@@ -24,6 +23,7 @@ dependencies:
   - media_library
   - menu_ui
   - metatag
+  - moderation_sidebar
   - node
   - options
   - paragraphs
@@ -42,6 +42,7 @@ dependencies:
   - views
   - views_bootstrap
   - webform
+  - workflows
   - yoast_seo
 version: 8.x-1.0
 package: D324

@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:e9e05a7e-2ce9-46e3-836f-02da46268782'
   module:
     - paragraphs_library
 third_party_settings:
@@ -8,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: jumbotron
 label: Jumbotron
-icon_uuid: null
+icon_uuid: e9e05a7e-2ce9-46e3-836f-02da46268782
 description: 'A prominent, billboard-style vehicle for delivering a short, powerful message'
 behavior_plugins: {  }

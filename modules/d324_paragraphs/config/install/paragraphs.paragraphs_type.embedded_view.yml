@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:0d4fc8fe-e487-458f-9d08-73ff5053edd6'
   module:
     - paragraphs_library
 third_party_settings:
@@ -8,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: embedded_view
 label: 'Embedded View'
-icon_uuid: null
+icon_uuid: 0d4fc8fe-e487-458f-9d08-73ff5053edd6
 description: 'Embed a view into the page'
 behavior_plugins: {  }

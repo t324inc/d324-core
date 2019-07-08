@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:97dcf39d-8e16-4bad-ade3-797039469184'
   module:
     - paragraphs_library
 third_party_settings:
@@ -8,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: feature_box
 label: 'Feature Box'
-icon_uuid: null
+icon_uuid: 97dcf39d-8e16-4bad-ade3-797039469184
 description: 'A stylistic two column display that features a media item on one side and freeform content on the other'
 behavior_plugins: {  }

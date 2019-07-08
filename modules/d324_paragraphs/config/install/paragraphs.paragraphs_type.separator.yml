@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:8279d228-e95a-41e0-a3b3-ce00a508bc33'
 id: separator
 label: Separator
-icon_uuid: null
+icon_uuid: 8279d228-e95a-41e0-a3b3-ce00a508bc33
 description: 'A separator/spacer with optional horizontal divider'
 behavior_plugins: {  }

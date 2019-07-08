@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:b21bd1b9-a57e-41f8-a96f-89767b947619'
   module:
     - paragraphs_library
 third_party_settings:
@@ -8,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: embedded_webform
 label: 'Embedded Webform'
-icon_uuid: null
+icon_uuid: b21bd1b9-a57e-41f8-a96f-89767b947619
 description: 'Embed a Webform into the page'
 behavior_plugins: {  }
