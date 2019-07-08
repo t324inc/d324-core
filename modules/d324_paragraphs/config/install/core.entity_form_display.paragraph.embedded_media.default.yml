@@ -12,16 +12,9 @@ bundle: embedded_media
 mode: default
 content:
   field_media:
-    weight: 1
+    weight: 2
     settings:
-      media_types:
-        - image
-        - video
-        - remote_video
-        - file
-        - instagram
-        - tweet
-        - audio
+      media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content

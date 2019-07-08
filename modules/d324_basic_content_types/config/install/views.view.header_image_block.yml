@@ -30,7 +30,7 @@ display:
         options:
           perm: 'view media'
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -136,6 +136,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+        simple_sitemap_display_extender: {  }
       display_description: ''
     cache_metadata:
       max-age: 0
@@ -154,6 +155,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+        simple_sitemap_display_extender: {  }
       display_description: ''
       relationships:
         entityqueue_relationship:

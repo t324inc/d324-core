@@ -3,58 +3,48 @@ type: module
 core: 8.x
 dependencies:
   - advanced_text_formatter
-  - 'advanced_text_formatter:advanced_text_formatter'
   - blazy
-  - 'blazy:blazy'
   - color_field
-  - 'color_field:color_field'
   - ds
-  - 'ds:ds'
   - entity_browser
-  - 'entity_browser:entity_browser'
   - entity_reference_revisions
-  - 'entity_reference_revisions:entity_reference_revisions'
   - entity_usage
-  - 'entity_usage:entity_usage'
   - field
-  - 'field:field'
   - field_group
-  - 'field_group:field_group'
   - geocoder
-  - 'geocoder:geocoder'
   - geocoder_field
-  - 'geocoder_field:geocoder_field'
   - geofield
-  - 'geofield:geofield'
+  - geysir
   - link
-  - 'link:link'
   - link_attributes
-  - 'link_attributes:link_attributes'
   - maxlength
-  - 'maxlength:maxlength'
   - media
-  - 'media:media'
   - media_library
-  - 'media_library:media_library'
   - options
-  - 'options:options'
   - paragraphs
-  - 'paragraphs:paragraphs'
   - paragraphs_library
-  - 'paragraphs_library:paragraphs_library'
-  - 'responsive_preview:responsive_preview'
   - styled_google_map
-  - 'styled_google_map:styled_google_map'
   - text
-  - 'text:text'
   - user
-  - 'user:user'
   - views
-  - 'views:views'
   - viewsreference
-  - 'viewsreference:viewsreference'
   - webform
-  - 'webform:webform'
 version: 8.x-1.0
 package: D324
 description: 'Paragraph types and configuration for D324 sites'
+default_content:
+  file:
+    - 6d07d3b2-2364-450a-8089-a3ad4a114539
+    - fdf7695c-0594-4047-9bca-a9fcca11b362
+    - 1cb94d53-4a1a-474d-8bbb-21d65d759a6b
+    - a0e60aa2-fa4d-4a3a-a702-aa569c2ca8fb
+    - 0d4fc8fe-e487-458f-9d08-73ff5053edd6
+    - b21bd1b9-a57e-41f8-a96f-89767b947619
+    - 97dcf39d-8e16-4bad-ade3-797039469184
+    - 0718588d-246f-4c27-b83a-d2cc780005ac
+    - 96fedcdf-493c-45ae-b3f7-c0dc81a697b8
+    - e9e05a7e-2ce9-46e3-836f-02da46268782
+    - 8279d228-e95a-41e0-a3b3-ce00a508bc33
+    - 5ce8cc0b-b676-46bf-9833-93315748177a
+    - 2e283a75-87f3-4b1b-abc5-e642d7678f80
+    - a6f6fac4-a85f-4885-8ede-d4b2935234f1

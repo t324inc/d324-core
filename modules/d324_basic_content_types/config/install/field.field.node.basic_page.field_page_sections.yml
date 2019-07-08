@@ -26,43 +26,46 @@ settings:
       image_slide: image_slide
       side_by_side_column: side_by_side_column
     target_bundles_drag_drop:
-      breakout_container:
-        weight: 14
+      simple_block:
+        weight: -29
         enabled: false
-      content_columns:
-        weight: 15
+      side_by_side_features:
+        weight: -28
         enabled: false
-      embedded_media:
-        weight: 16
-        enabled: false
-      embedded_view:
-        weight: 17
-        enabled: false
-      embedded_webform:
-        weight: 18
+      jumbotron:
+        weight: -27
         enabled: false
       feature_box:
-        weight: 19
+        weight: -26
+        enabled: false
+      separator:
+        weight: -25
+        enabled: false
+      embedded_media:
+        weight: -24
+        enabled: false
+      embedded_google_map:
+        weight: -23
+        enabled: false
+      embedded_webform:
+        weight: -22
+        enabled: false
+      embedded_view:
+        weight: -21
+        enabled: false
+      breakout_container:
+        weight: -20
+        enabled: false
+      content_columns:
+        weight: -19
         enabled: false
       from_library:
-        weight: 20
+        weight: -18
         enabled: false
       image_slide:
         enabled: true
-        weight: 21
-      jumbotron:
-        weight: 22
-        enabled: false
-      separator:
-        weight: 23
-        enabled: false
+        weight: -17
       side_by_side_column:
         enabled: true
-        weight: 24
-      side_by_side_features:
-        weight: 25
-        enabled: false
-      simple_block:
-        weight: 26
-        enabled: false
+        weight: -16
 field_type: entity_reference_revisions

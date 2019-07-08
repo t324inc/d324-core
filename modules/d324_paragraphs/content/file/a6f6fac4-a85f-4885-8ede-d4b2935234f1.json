@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/paragraphs_type_icon\/001-interface.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 63
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a6f6fac4-a85f-4885-8ede-d4b2935234f1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9c88f00b-0f3e-4361-89d3-278784ead04b"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "001-interface.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/paragraphs_type_icon\/001-interface.png",
+            "url": "\/sites\/default\/files\/paragraphs_type_icon\/001-interface.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 3203
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-07-07T23:26:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-07-07T23:26:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

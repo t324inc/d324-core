@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/paragraphs_type_icon\/005-browser.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 50
+        }
+    ],
+    "uuid": [
+        {
+            "value": "fdf7695c-0594-4047-9bca-a9fcca11b362"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9c88f00b-0f3e-4361-89d3-278784ead04b"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "005-browser.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/paragraphs_type_icon\/005-browser.png",
+            "url": "\/sites\/default\/files\/paragraphs_type_icon\/005-browser.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 13283
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-07-07T23:15:08+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-07-07T23:15:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/paragraphs_type_icon\/005-stretching.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 60
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8279d228-e95a-41e0-a3b3-ce00a508bc33"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9c88f00b-0f3e-4361-89d3-278784ead04b"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "005-stretching.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/paragraphs_type_icon\/005-stretching.png",
+            "url": "\/sites\/default\/files\/paragraphs_type_icon\/005-stretching.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 3611
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-07-07T23:24:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-07-07T23:25:01+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

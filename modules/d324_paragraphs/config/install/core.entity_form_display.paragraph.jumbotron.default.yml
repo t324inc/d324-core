@@ -45,9 +45,9 @@ third_party_settings:
       region: content
     group_background_settings:
       children:
-        - field_background_image
         - field_background_color
         - field_background_color_2
+        - field_background_image
       parent_name: group_jumbotron_tabs
       weight: 21
       format_type: tab
@@ -89,7 +89,7 @@ content:
       show_palette_only: '0'
     third_party_settings: {  }
   field_background_image:
-    weight: 4
+    weight: 22
     settings:
       media_types: {  }
     third_party_settings: {  }

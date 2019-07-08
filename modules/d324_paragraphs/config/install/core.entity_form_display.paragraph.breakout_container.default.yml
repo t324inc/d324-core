@@ -11,6 +11,7 @@ dependencies:
   module:
     - color_field
     - field_group
+    - media_library
     - paragraphs
 third_party_settings:
   field_group:
@@ -88,13 +89,11 @@ content:
     type: color_field_widget_spectrum
     region: content
   field_background_image:
-    weight: 28
+    weight: 29
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_breakout_paragraphs:
     type: paragraphs

@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.landing_page.field_yoast_seo
     - node.type.landing_page
   module:
-    - media_library
     - metatag
     - paragraphs
     - path
@@ -25,11 +24,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_header_image:
-    type: media_library_widget
-    weight: 2
+    weight: 26
     settings:
-      media_types: {  }
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_landing_page_sections:
     type: paragraphs

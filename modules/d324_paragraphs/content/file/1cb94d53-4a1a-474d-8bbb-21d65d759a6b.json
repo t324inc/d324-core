@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/paragraphs_type_icon\/040-map-1.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 59
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1cb94d53-4a1a-474d-8bbb-21d65d759a6b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9c88f00b-0f3e-4361-89d3-278784ead04b"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "040-map-1.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/paragraphs_type_icon\/040-map-1.png",
+            "url": "\/sites\/default\/files\/paragraphs_type_icon\/040-map-1.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 20933
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-07-07T23:24:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-07-07T23:24:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.basic_page.field_yoast_seo
     - node.type.basic_page
   module:
-    - media_library
     - metatag
     - paragraphs
     - path
@@ -25,11 +24,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_header_image:
-    weight: 2
+    weight: 26
     settings:
-      media_types: {  }
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: media_library_widget
+    type: entity_reference_autocomplete
     region: content
   field_meta_tags:
     weight: 10

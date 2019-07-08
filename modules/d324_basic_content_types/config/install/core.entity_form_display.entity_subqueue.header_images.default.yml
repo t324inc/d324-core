@@ -11,12 +11,12 @@ bundle: header_images
 mode: default
 content:
   items:
-    type: media_library_widget
-    weight: 5
+    weight: 6
     settings:
       media_types: {  }
-    region: content
     third_party_settings: {  }
+    type: media_library_widget
+    region: content
   title:
     type: string_textfield
     weight: -10

@@ -4,9 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_featured_media
     - media.type.image
-    - media.type.instagram
     - media.type.remote_video
-    - media.type.tweet
     - media.type.video
     - paragraphs.paragraphs_type.feature_box
 id: paragraph.feature_box.field_featured_media
@@ -24,9 +22,7 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      instagram: instagram
       remote_video: remote_video
-      tweet: tweet
       video: video
     sort:
       field: _none

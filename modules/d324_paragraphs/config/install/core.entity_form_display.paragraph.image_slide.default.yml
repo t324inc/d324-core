@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.image_slide
   module:
     - link
+    - media_library
 id: paragraph.image_slide.default
 targetEntityType: paragraph
 bundle: image_slide
@@ -24,11 +25,9 @@ content:
   field_hero_slider_media:
     weight: 3
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_hero_slider_text:
     weight: 0
