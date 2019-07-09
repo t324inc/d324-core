@@ -4,7 +4,6 @@ type: module
 core: 8.x
 dependencies:
   - d324_basic_content_types
-  - d324_blog_posts
   - field
   - metatag
   - node

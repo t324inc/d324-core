@@ -18,7 +18,6 @@ dependencies:
   - geysir
   - link
   - link_attributes
-  - maxlength
   - media
   - media_library
   - options

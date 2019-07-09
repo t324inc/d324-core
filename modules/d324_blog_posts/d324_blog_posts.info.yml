@@ -6,7 +6,6 @@ dependencies:
   - block
   - content_moderation
   - d324_basic_content_types
-  - d324_seo
   - ds
   - field
   - media_library

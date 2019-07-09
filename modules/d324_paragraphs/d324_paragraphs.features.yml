@@ -1,5 +1,3 @@
 bundle: d324
 excluded:
-  - responsive_preview.device.galaxy_s9_
-  - responsive_preview.device.iphone_8_
 required: true

@@ -54,9 +54,6 @@ content:
           optimin: 30
           optimax: 60
           tolerance: 15
-      maxlength:
-        maxlength_js: 100
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
       advanced_text_formatter:
         show_token_tree: 0
     type: string_textfield
