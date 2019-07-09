@@ -9,6 +9,7 @@ dependencies:
     - node.type.basic_page
   module:
     - entity_reference_revisions
+    - metatag
     - user
     - yoast_seo
 id: node.basic_page.default
@@ -16,9 +17,21 @@ targetEntityType: node
 bundle: basic_page
 mode: default
 content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_empty_formatter
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_page_sections:
     type: entity_reference_revisions_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: default
@@ -26,18 +39,17 @@ content:
     third_party_settings: {  }
     region: content
   field_yoast_seo:
-    weight: 2
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: yoastseo_formatter
     region: content
   links:
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
   field_header_image: true
-  field_meta_tags: true

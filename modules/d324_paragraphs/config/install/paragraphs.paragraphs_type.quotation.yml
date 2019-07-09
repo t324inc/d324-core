@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:3db806df-a864-4750-80a0-aa8573a50456'
+    - 'file:file:107fce04-e95b-4893-bc3d-bffcba075456'
   module:
     - paragraphs_library
 third_party_settings:
@@ -10,6 +10,6 @@ third_party_settings:
     allow_library_conversion: true
 id: quotation
 label: Quotation
-icon_uuid: 3db806df-a864-4750-80a0-aa8573a50456
+icon_uuid: 107fce04-e95b-4893-bc3d-bffcba075456
 description: 'A stylized blockquote or pullquote'
 behavior_plugins: {  }

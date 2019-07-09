@@ -94,9 +94,11 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: reset
+          id: default
           settings:
             lb: ''
+            lb-col: false
+            classes: {  }
     type: blazy_media
     region: content
   field_text_content:

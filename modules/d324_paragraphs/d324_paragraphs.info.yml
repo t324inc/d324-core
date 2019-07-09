@@ -3,6 +3,7 @@ type: module
 core: 8.x
 dependencies:
   - advanced_text_formatter
+  - allowed_formats
   - blazy
   - color_field
   - ds

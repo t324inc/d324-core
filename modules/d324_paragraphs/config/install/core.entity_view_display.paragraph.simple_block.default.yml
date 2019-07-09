@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.simple_block.field_call_to_action_buttons
+    - field.field.paragraph.simple_block.field_direction
     - field.field.paragraph.simple_block.field_heading
     - field.field.paragraph.simple_block.field_media
     - field.field.paragraph.simple_block.field_pre_heading
@@ -12,6 +13,7 @@ dependencies:
   module:
     - ds
     - link
+    - options
     - text
 id: paragraph.simple_block.default
 targetEntityType: paragraph
@@ -29,6 +31,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_direction:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_heading:
     weight: 2

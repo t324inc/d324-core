@@ -44,8 +44,11 @@ plugins_options:
   file: {  }
   freegeoip: {  }
   geoip: {  }
+  geojsonfile: {  }
   geoplugin: {  }
+  gpxfile: {  }
   hostip: {  }
+  kmlfile: {  }
   openstreetmap: {  }
   random: {  }
   yandex: {  }

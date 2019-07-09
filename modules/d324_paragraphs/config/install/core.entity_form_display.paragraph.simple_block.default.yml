@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.simple_block.field_call_to_action_buttons
+    - field.field.paragraph.simple_block.field_direction
     - field.field.paragraph.simple_block.field_heading
     - field.field.paragraph.simple_block.field_media
     - field.field.paragraph.simple_block.field_pre_heading
@@ -34,6 +35,12 @@ content:
         aria-label: false
     third_party_settings: {  }
     type: link_attributes
+    region: content
+  field_direction:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_heading:
     weight: 0

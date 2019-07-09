@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_direction
+    - paragraphs.paragraphs_type.simple_block
+  module:
+    - options
+id: paragraph.simple_block.field_direction
+field_name: field_direction
+entity_type: paragraph
+bundle: simple_block
+label: 'Image Alignment'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string
