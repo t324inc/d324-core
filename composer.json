@@ -108,7 +108,7 @@
     "drupal/geofield": "^1.0",
     "drupal/styled_google_map": "^2.0",
     "drupal/linkit": "^4.3",
-    "drupal/slick": "~2.0",
+    "drupal/slick": "2.x-dev",
     "drupal/slick_views": "~2.0",
     "drupal/slick_paragraphs": "^2.0",
     "drupal/pathauto": "^1.4",
