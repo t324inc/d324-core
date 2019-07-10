@@ -7,7 +7,6 @@ dependencies:
     - field.field.block_content.hero_slider.field_style
   module:
     - advanced_text_formatter
-    - maxlength
     - paragraphs
 id: block_content.hero_slider.default
 targetEntityType: block_content

@@ -8,7 +8,6 @@ dependencies:
     - node.type.testimonial
   module:
     - advanced_text_formatter
-    - maxlength
     - path
     - text
 id: node.testimonial.default

@@ -7,7 +7,6 @@ dependencies:
   module:
     - node
     - user
-    - views_bootstrap
 id: testimonial_index
 label: 'Testimonial Index'
 module: views
@@ -67,17 +66,12 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: views_bootstrap_grid
+        type: default
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: true
           uses_fields: false
-          alignment: horizontal
-          columns: '2'
-          col_xs: col-xs-12
-          col_sm: col-sm-12
-          col_md: col-md-12
-          col_lg: col-lg-6
       row:
         type: 'entity:node'
         options:

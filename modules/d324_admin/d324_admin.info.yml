@@ -24,4 +24,3 @@ install:
   - settings_tray
   - entity_clone
   - taxonomy_access_fix
-  - length_indicator
