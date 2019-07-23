@@ -15,7 +15,6 @@ dependencies:
   - geocoder
   - geocoder_field
   - geofield
-  - geysir
   - link
   - link_attributes
   - media
