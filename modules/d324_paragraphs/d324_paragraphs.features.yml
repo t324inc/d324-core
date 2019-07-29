@@ -4,3 +4,4 @@ excluded:
   - core.entity_view_display.node.ace_test.default
   - core.entity_view_display.node.ace_test.teaser
   - field.field.node.ace_test.field_ace_sections
+  - field.storage.node.field_ace_sections
