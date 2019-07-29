@@ -9,6 +9,8 @@ dependencies:
   - block_content
   - content_moderation
   - d324_core
+  - d324_paragraphs
+  - d324_seo
   - ds
   - entity_reference_revisions
   - entityqueue
@@ -19,9 +21,11 @@ dependencies:
   - media
   - media_library
   - menu_ui
+  - metatag
   - moderation_sidebar
   - node
   - options
+  - paragraphs
   - path
   - pathauto
   - rabbit_hole
@@ -38,5 +42,6 @@ dependencies:
   - views
   - webform
   - workflows
+  - yoast_seo
 version: 8.x-1.0
 package: D324

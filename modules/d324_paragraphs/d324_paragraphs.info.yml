@@ -6,6 +6,10 @@ dependencies:
   - allowed_formats
   - blazy
   - color_field
+  - content_moderation
+  - d324_ace
+  - d324_ace_paragraph_behaviors
+  - d324_basic_content_types
   - ds
   - entity_browser
   - entity_reference_revisions
@@ -22,6 +26,8 @@ dependencies:
   - options
   - paragraphs
   - paragraphs_library
+  - path
+  - slick_paragraphs
   - styled_google_map
   - text
   - user

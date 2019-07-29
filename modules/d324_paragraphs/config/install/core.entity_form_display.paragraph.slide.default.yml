@@ -1,0 +1,115 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_slide_description
+    - field.field.paragraph.slide.field_slide_heading
+    - field.field.paragraph.slide.field_slide_links
+    - field.field.paragraph.slide.field_slide_media
+    - paragraphs.paragraphs_type.slide
+  module:
+    - advanced_text_formatter
+    - allowed_formats
+    - field_group
+    - link_attributes
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_slide_extra_fields:
+      children:
+        - field_slide_heading
+        - field_slide_description
+        - field_slide_links
+      parent_name: group_slide_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        formatter: closed
+      label: 'Extra Fields'
+      region: content
+    group_slide_tabs:
+      children:
+        - group_slide_media
+        - group_slide_extra_fields
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: 'Slide Tabs'
+      region: content
+    group_slide_media:
+      children:
+        - field_slide_media
+      parent_name: group_slide_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Slide Media'
+      region: content
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_slide_description:
+    weight: 3
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+      advanced_text_formatter:
+        show_token_tree: 0
+    type: text_textarea
+    region: content
+  field_slide_heading:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_slide_links:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        rel: true
+        class: true
+        id: false
+        name: false
+        accesskey: false
+        aria-label: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_slide_media:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ace_test.field_ace_sections
+    - node.type.ace_test
+  module:
+    - user
+id: node.ace_test.teaser
+targetEntityType: node
+bundle: ace_test
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_ace_sections: true

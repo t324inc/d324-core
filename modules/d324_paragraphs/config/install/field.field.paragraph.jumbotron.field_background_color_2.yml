@@ -11,7 +11,7 @@ field_name: field_background_color_2
 entity_type: paragraph
 bundle: jumbotron
 label: 'Background Color 2'
-description: ''
+description: 'Add a second background color in order to create a CSS gradient.'
 required: false
 translatable: true
 default_value: {  }

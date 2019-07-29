@@ -11,7 +11,7 @@ field_name: field_background_color
 entity_type: paragraph
 bundle: jumbotron
 label: 'Background Color'
-description: ''
+description: 'Add a solid background color for this jumbotron.  It will display in front of the background image, if one is used, so be sure to specify an opacity if using both.'
 required: false
 translatable: true
 default_value: {  }

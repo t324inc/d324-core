@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:e17e0ea8-93e9-4ba5-85e7-954c51e0cc61'
+id: slide
+label: Slide
+icon_uuid: e17e0ea8-93e9-4ba5-85e7-954c51e0cc61
+description: 'A carousel or slideshow slide'
+behavior_plugins: {  }

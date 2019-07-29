@@ -70,10 +70,10 @@ content:
     region: content
     settings:
       show_input: '1'
-      palette: ''
+      show_palette: '1'
+      palette: '["#333333","#FCFCFC","#005696","#555555","#11689B","#FEC114","#AEBED7","#175088","#F89406","#DC3545","#FEC114","#17A2B8","#28A745","#111111","#F0F0F0","#000000","#FFFFFF"]'
       show_buttons: '1'
       allow_empty: '1'
-      show_palette: '0'
       show_palette_only: '0'
     third_party_settings: {  }
   field_background_color_2:
@@ -82,10 +82,10 @@ content:
     region: content
     settings:
       show_input: '1'
-      palette: ''
+      show_palette: '1'
+      palette: '["#333333","#FCFCFC","#005696","#555555","#11689B","#FEC114","#AEBED7","#175088","#F89406","#DC3545","#FEC114","#17A2B8","#28A745","#111111","#F0F0F0","#000000","#FFFFFF"]'
       show_buttons: '1'
       allow_empty: '1'
-      show_palette: '0'
       show_palette_only: '0'
     third_party_settings: {  }
   field_background_image:

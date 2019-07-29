@@ -1,14 +1,11 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.node.field_yoast_seo
   module:
     - better_exposed_filters
     - node
     - user
     - views_bulk_operations
-    - yoast_seo
 id: content
 label: Content
 module: node
@@ -497,11 +494,6 @@ display:
           plugin_id: field
           entity_type: node
           entity_field: changed
-        field_yoast_seo:
-          id: field_yoast_seo
-          table: node__field_yoast_seo
-          field: field_yoast_seo
-          type: yoastseo_formatter
         operations:
           id: operations
           table: node
@@ -871,8 +863,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags:
-        - 'config:field.storage.node.field_yoast_seo'
+      tags: {  }
   page_1:
     display_options:
       path: admin/content/node
@@ -912,5 +903,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags:
-        - 'config:field.storage.node.field_yoast_seo'
+      tags: {  }

@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_slides
+    - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
+id: paragraph.slideshow.field_slideshow_slides
+field_name: field_slideshow_slides
+entity_type: paragraph
+bundle: slideshow
+label: Slides
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slide: slide
+    target_bundles_drag_drop:
+      slide:
+        enabled: true
+        weight: 18
+      breakout_container:
+        weight: 19
+        enabled: false
+      content_columns:
+        weight: 20
+        enabled: false
+      embedded_google_map:
+        weight: 21
+        enabled: false
+      embedded_media:
+        weight: 22
+        enabled: false
+      embedded_view:
+        weight: 23
+        enabled: false
+      embedded_webform:
+        weight: 24
+        enabled: false
+      feature_box:
+        weight: 25
+        enabled: false
+      from_library:
+        weight: 26
+        enabled: false
+      image_slide:
+        weight: 27
+        enabled: false
+      jumbotron:
+        weight: 28
+        enabled: false
+      quotation:
+        weight: 29
+        enabled: false
+      separator:
+        weight: 30
+        enabled: false
+      side_by_side_column:
+        weight: 31
+        enabled: false
+      side_by_side_features:
+        weight: 32
+        enabled: false
+      simple_block:
+        weight: 33
+        enabled: false
+      slideshow:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

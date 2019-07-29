@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:b2d7612d-bb78-4739-ab3a-c0a1ab75c894'
+  module:
+    - d324_ace_paragraph_behaviors
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: slideshow
+label: Slideshow
+icon_uuid: b2d7612d-bb78-4739-ab3a-c0a1ab75c894
+description: 'An embedded animated paragraph slideshow'
+behavior_plugins:
+  ace_background:
+    background_media_field: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    enabled: true
+    groups:
+      slideshow_group:
+        default: ace-paragraphs-slideshow-dark

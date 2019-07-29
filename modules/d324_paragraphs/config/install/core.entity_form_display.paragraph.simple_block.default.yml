@@ -11,9 +11,58 @@ dependencies:
     - field.field.paragraph.simple_block.field_text_content
     - paragraphs.paragraphs_type.simple_block
   module:
+    - field_group
     - link_attributes
     - media_library
     - text
+third_party_settings:
+  field_group:
+    group_simple_block_tabs:
+      children:
+        - group_text_content
+        - group_media_content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Simple Block Tabs'
+      region: content
+    group_text_content:
+      children:
+        - field_heading
+        - field_pre_heading
+        - field_sub_heading
+        - field_text_content
+        - field_call_to_action_buttons
+      parent_name: group_simple_block_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Text Content'
+      region: content
+    group_media_content:
+      children:
+        - field_media
+        - field_direction
+      parent_name: group_simple_block_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Media Content'
+      region: content
 id: paragraph.simple_block.default
 targetEntityType: paragraph
 bundle: simple_block
@@ -43,7 +92,7 @@ content:
     type: options_select
     region: content
   field_heading:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -61,12 +110,17 @@ content:
   field_media:
     weight: 6
     settings:
-      media_types: {  }
+      media_types:
+        - image
+        - remote_video
+        - video
+        - tweet
+        - instagram
     third_party_settings: {  }
     type: media_library_widget
     region: content
   field_pre_heading:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -74,7 +128,7 @@ content:
     type: string_textfield
     region: content
   field_sub_heading:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
