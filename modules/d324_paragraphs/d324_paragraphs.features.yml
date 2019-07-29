@@ -1,2 +1,6 @@
 bundle: d324
-required: true
+excluded:
+  - core.entity_form_display.node.ace_test.default
+  - core.entity_view_display.node.ace_test.default
+  - core.entity_view_display.node.ace_test.teaser
+  - field.field.node.ace_test.field_ace_sections

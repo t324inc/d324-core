@@ -23,6 +23,7 @@ dependencies:
   - link_attributes
   - media
   - media_library
+  - node
   - options
   - paragraphs
   - paragraphs_library

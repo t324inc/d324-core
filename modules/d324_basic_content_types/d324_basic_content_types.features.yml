@@ -2,12 +2,7 @@ bundle: d324
 excluded:
   - responsive_preview.device.galaxy_s9_
   - responsive_preview.device.iphone_8_
-  - field.field.node.basic_page.field_meta_tags
-  - field.field.node.basic_page.field_yoast_seo
-  - field.field.node.landing_page.field_meta_tags
-  - field.field.node.landing_page.field_yoast_seo
   - core.base_field_override.block_content.basic.changed
   - core.base_field_override.block_content.basic.info
   - block.block.newslettersignupblock
   - block_content.type.basic
-required: true
