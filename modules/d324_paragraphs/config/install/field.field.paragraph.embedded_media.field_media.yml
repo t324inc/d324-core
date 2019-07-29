@@ -6,9 +6,7 @@ dependencies:
     - media.type.audio
     - media.type.file
     - media.type.image
-    - media.type.instagram
     - media.type.remote_video
-    - media.type.tweet
     - media.type.video
     - paragraphs.paragraphs_type.embedded_media
 id: paragraph.embedded_media.field_media
@@ -28,9 +26,7 @@ settings:
       audio: audio
       file: file
       image: image
-      instagram: instagram
       remote_video: remote_video
-      tweet: tweet
       video: video
     sort:
       field: _none
