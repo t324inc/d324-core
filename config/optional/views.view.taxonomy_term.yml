@@ -316,8 +316,6 @@ display:
     display_title: 'Terms list'
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
       query:
         type: views_query
         options: {  }

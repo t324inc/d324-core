@@ -2,14 +2,11 @@ uuid: 7ef8cace-8a59-4a06-876d-768704e78aa2
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.node.field_yoast_seo
   module:
     - better_exposed_filters
     - node
     - user
     - views_bulk_operations
-    - yoast_seo
 _core:
   default_config_hash: '-WckL2Wm1FlyBilshcgzm9rqNXrjrHBvKVLk2BXG8uw'
 id: content
@@ -524,11 +521,6 @@ display:
           plugin_id: field
           entity_type: node
           entity_field: changed
-        field_yoast_seo:
-          id: field_yoast_seo
-          table: node__field_yoast_seo
-          field: field_yoast_seo
-          type: yoastseo_formatter
         operations:
           id: operations
           table: node
@@ -898,8 +890,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags:
-        - 'config:field.storage.node.field_yoast_seo'
   page_1:
     display_options:
       path: admin/content/node
@@ -916,8 +906,6 @@ display:
         description: 'Find and manage content'
         menu_name: admin
         weight: -10
-      display_extenders:
-        metatag_display_extender: {  }
     display_plugin: page
     display_title: Page
     id: page_1
@@ -932,5 +920,3 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags:
-        - 'config:field.storage.node.field_yoast_seo'
