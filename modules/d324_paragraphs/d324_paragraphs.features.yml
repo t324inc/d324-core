@@ -1,7 +1,1 @@
-bundle: d324
-excluded:
-  - core.entity_form_display.node.ace_test.default
-  - core.entity_view_display.node.ace_test.default
-  - core.entity_view_display.node.ace_test.teaser
-  - field.field.node.ace_test.field_ace_sections
-  - field.storage.node.field_ace_sections
+bundle: d324su

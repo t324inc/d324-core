@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.node.field_tags
     - node.type.blog_post
-    - taxonomy.vocabulary.tags
 id: node.blog_post.field_tags
 field_name: field_tags
 entity_type: node

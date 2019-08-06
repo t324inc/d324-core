@@ -3,7 +3,6 @@ description: 'SEO related fields and configuration for D324 sites'
 type: module
 core: 8.x
 dependencies:
-  - d324_basic_content_types
   - field
   - metatag
   - node

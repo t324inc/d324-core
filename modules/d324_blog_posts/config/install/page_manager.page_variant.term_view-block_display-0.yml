@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - page_manager.page.term_view
     - views.view.blog
   module:
     - views

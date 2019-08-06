@@ -1,5 +1,5 @@
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.header_image_block
@@ -7,14 +7,12 @@ dependencies:
     - block_class
     - system
     - views
-  theme:
-    - ubs
 third_party_settings:
   block_class:
     classes: 'header-image-block breakout-container mb-5'
 id: header_image_block
-theme: ubs
-region: titlearea
+theme: null
+region: ''
 weight: 0
 provider: null
 plugin: 'views_block:header_image_block-block_2'

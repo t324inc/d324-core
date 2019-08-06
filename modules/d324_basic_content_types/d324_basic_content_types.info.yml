@@ -8,6 +8,7 @@ dependencies:
   - block_class
   - block_content
   - content_moderation
+  - d324_ace
   - d324_core
   - d324_paragraphs
   - d324_seo

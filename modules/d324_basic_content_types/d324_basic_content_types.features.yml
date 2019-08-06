@@ -1,8 +1,16 @@
 bundle: d324
 excluded:
-  - responsive_preview.device.galaxy_s9_
-  - responsive_preview.device.iphone_8_
   - core.base_field_override.block_content.basic.changed
   - core.base_field_override.block_content.basic.info
-  - block.block.newslettersignupblock
   - block_content.type.basic
+required:
+  - core.entity_form_display.media.audio.media_library
+  - core.entity_form_display.media.file.media_library
+  - core.entity_form_display.media.image.media_library
+  - core.entity_form_display.media.instagram.media_library
+  - core.entity_form_display.media.remote_video.media_library
+  - core.entity_form_display.media.tweet.media_library
+  - core.entity_form_display.media.video.media_library
+  - field.field.node.landing_page.field_ace_sections
+  - field.field.node.basic_page.field_ace_sections
+  - field.storage.node.field_ace_sections

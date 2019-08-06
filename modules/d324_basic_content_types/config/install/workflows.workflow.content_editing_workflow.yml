@@ -2,9 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.ace_test
     - node.type.basic_page
-    - node.type.blog_post
     - node.type.landing_page
   module:
     - content_moderation
@@ -40,8 +38,6 @@ type_settings:
         - published
   entity_types:
     node:
-      - ace_test
       - basic_page
-      - blog_post
       - landing_page
   default_moderation_state: published

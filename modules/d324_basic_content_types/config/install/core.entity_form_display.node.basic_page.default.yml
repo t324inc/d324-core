@@ -2,19 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.basic_page.field_ace_sections
     - field.field.node.basic_page.field_header_image
-    - field.field.node.basic_page.field_meta_tags
     - field.field.node.basic_page.field_page_sections
-    - field.field.node.basic_page.field_yoast_seo
     - node.type.basic_page
     - workflows.workflow.content_editing_workflow
   module:
     - content_moderation
+    - d324_ace
     - media_library
-    - metatag
     - paragraphs
     - path
-    - yoast_seo
 id: node.basic_page.default
 targetEntityType: node
 bundle: basic_page
@@ -26,18 +24,30 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ace_sections:
+    weight: 26
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      full_screen_editing: false
+      always_show_options_form: false
+    third_party_settings: {  }
+    type: d324_ace_widget
+    region: content
   field_header_image:
     weight: 10
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
-    region: content
-  field_meta_tags:
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_firehose
     region: content
   field_page_sections:
     type: paragraphs
@@ -57,13 +67,6 @@ content:
         collapse_edit_all: collapse_edit_all
         add_above: add_above
     third_party_settings: {  }
-    region: content
-  field_yoast_seo:
-    weight: 12
-    settings:
-      body: body
-    third_party_settings: {  }
-    type: yoast_seo_widget
     region: content
   moderation_state:
     type: moderation_state_default
@@ -120,4 +123,3 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
