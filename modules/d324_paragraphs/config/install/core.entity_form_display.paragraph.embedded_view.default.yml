@@ -2,18 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.embedded_view.field_background_image
     - field.field.paragraph.embedded_view.field_embedded_view
     - field.field.paragraph.embedded_view.field_heading
     - field.field.paragraph.embedded_view.field_pre_heading
     - field.field.paragraph.embedded_view.field_sub_heading
     - paragraphs.paragraphs_type.embedded_view
   module:
+    - media_library
     - viewsreference
 id: paragraph.embedded_view.default
 targetEntityType: paragraph
 bundle: embedded_view
 mode: default
 content:
+  field_background_image:
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
   field_embedded_view:
     weight: 3
     settings: {  }

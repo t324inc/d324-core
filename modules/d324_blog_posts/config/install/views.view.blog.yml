@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.blog_post
+    - system.menu.main
   module:
     - node
     - user
@@ -71,8 +72,7 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: ''
+          row_class: mb-5
           default_row_class: true
           uses_fields: false
       row:
@@ -225,6 +225,7 @@ display:
       display_extenders:
         metatag_display_extender: {  }
         simple_sitemap_display_extender: {  }
+      title: Blog
     cache_metadata:
       max-age: -1
       contexts:
@@ -242,6 +243,34 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      menu:
+        type: normal
+        title: Blog
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -47
+        context: '0'
+        menu_name: main
+      path: blog
     cache_metadata:
       max-age: -1
       contexts:

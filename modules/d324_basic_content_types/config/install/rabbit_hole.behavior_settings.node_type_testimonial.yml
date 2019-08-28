@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.testimonial
 id: node_type_testimonial
-action: access_denied
-allow_override: 1
+action: page_not_found
+allow_override: 0
 redirect: ''
 redirect_code: 301

@@ -20,7 +20,6 @@ content:
       skin: fullwidth
       view_mode: default
       cache: 0
-      override: true
       overridables:
         autoplay: autoplay
         arrows: '0'
@@ -31,6 +30,7 @@ content:
         randomize: '0'
         variableWidth: '0'
       current_view_mode: default
+      override: false
       skin_arrows: ''
       skin_dots: ''
       style: ''

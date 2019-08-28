@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.blog_post
     - node.type.landing_page
   module:
     - content_moderation
@@ -39,5 +40,6 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - blog_post
       - landing_page
   default_moderation_state: published

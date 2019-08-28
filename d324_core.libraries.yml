@@ -1,0 +1,4 @@
+header_image:
+  css:
+    theme:
+      css/header_image.css: {}

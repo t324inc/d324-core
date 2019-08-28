@@ -2,9 +2,17 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:0718588d-246f-4c27-b83a-d2cc780005ac'
+    - 'file:file:8a7bba5c-073b-4145-8eda-fba6dd0a8cfa'
+  module:
+    - d324_ace_paragraph_behaviors
 id: from_library
 label: 'From library'
-icon_uuid: 0718588d-246f-4c27-b83a-d2cc780005ac
+icon_uuid: 8a7bba5c-073b-4145-8eda-fba6dd0a8cfa
 description: 'Reuse an existing paragraph from your library'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    background_media_field: ''
+  ace_paragraph_class: {  }
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout: {  }

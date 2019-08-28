@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.simple_block.field_direction
     - field.field.paragraph.simple_block.field_heading
     - field.field.paragraph.simple_block.field_media
+    - field.field.paragraph.simple_block.field_media_display_mode
     - field.field.paragraph.simple_block.field_pre_heading
     - field.field.paragraph.simple_block.field_sub_heading
     - field.field.paragraph.simple_block.field_text_content
@@ -21,7 +22,7 @@ bundle: simple_block
 mode: default
 content:
   field_call_to_action_buttons:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       trim_length: 80
@@ -31,13 +32,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_direction:
-    weight: 6
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
     region: content
   field_heading:
     weight: 2
@@ -84,6 +78,13 @@ content:
       link: true
       view_mode: default
     third_party_settings: {  }
+  field_media_display_mode:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_pre_heading:
     weight: 1
     label: hidden
@@ -102,7 +103,7 @@ content:
     region: content
   field_text_content:
     type: text_default
-    weight: 5
+    weight: 4
     region: content
     label: hidden
     settings: {  }
@@ -114,4 +115,5 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-hidden: {  }
+hidden:
+  field_direction: true

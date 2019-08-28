@@ -6,7 +6,10 @@ dependencies:
   module:
     - system
     - views
+  theme:
+    - null
 id: views_block__blog_categories_block_1
+theme: null
 region: sidebar_left
 weight: 0
 provider: null

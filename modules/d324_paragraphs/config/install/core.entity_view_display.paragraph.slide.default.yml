@@ -7,7 +7,9 @@ dependencies:
     - field.field.paragraph.slide.field_slide_links
     - field.field.paragraph.slide.field_slide_media
     - paragraphs.paragraphs_type.slide
+    - responsive_image.styles.de2e_standard
   module:
+    - blazy
     - ds
     - link
     - text
@@ -44,12 +46,62 @@ content:
     type: link
     region: content
   field_slide_media:
-    type: entity_reference_entity_view
+    type: blazy_media
     weight: 0
     label: hidden
     settings:
+      image_style: ''
+      responsive_image_style: de2e_standard
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
       view_mode: default
-      link: false
+      box_caption_custom: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_caption_text: '0'
+        field_media_image: '0'
+        field_media_cover_image: '0'
+        field_media_oembed_video: '0'
+        field_media_video_file: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
     third_party_settings:
       ds:
         ft:

@@ -5,6 +5,7 @@ dependencies:
   - advanced_text_formatter
   - allowed_formats
   - blazy
+  - block_content
   - color_field
   - content_moderation
   - d324_ace
@@ -12,6 +13,7 @@ dependencies:
   - d324_basic_content_types
   - ds
   - entity_browser
+  - entity_reference_display
   - entity_reference_revisions
   - entity_usage
   - field

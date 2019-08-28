@@ -2,13 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.basic_page.field_ace_sections
+    - field.field.node.basic_page.field_basic_page_sections
     - field.field.node.basic_page.field_header_image
-    - field.field.node.basic_page.field_page_sections
+    - field.field.node.basic_page.field_meta_tags
+    - field.field.node.basic_page.field_summary
     - node.type.basic_page
   module:
     - d324_ace
-    - entity_reference_revisions
+    - metatag
+    - text
     - user
 id: node.basic_page.default
 targetEntityType: node
@@ -20,26 +22,31 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ace_sections:
-    weight: 3
-    label: above
+  field_basic_page_sections:
+    weight: 2
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     type: d324_ace
     region: content
-  field_page_sections:
-    type: entity_reference_revisions_entity_view
+  field_meta_tags:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_summary:
     weight: 1
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
+    type: text_default
     region: content
   links:
-    weight: 2
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.embedded_google_map.field_description
     - field.field.paragraph.embedded_google_map.field_direction
     - field.field.paragraph.embedded_google_map.field_google_map
     - field.field.paragraph.embedded_google_map.field_google_map_address
@@ -17,14 +16,6 @@ targetEntityType: paragraph
 bundle: embedded_google_map
 mode: default
 content:
-  field_description:
-    weight: 3
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_direction:
     weight: 1
     settings: {  }

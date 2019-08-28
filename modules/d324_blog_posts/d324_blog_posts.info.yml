@@ -3,16 +3,24 @@ description: 'Provides Blog Post content type and related config for D324 sites'
 type: module
 core: 8.x
 dependencies:
+  - advanced_text_formatter
+  - allowed_formats
+  - blazy
   - block
   - content_moderation
+  - d324_ace
   - d324_basic_content_types
+  - d324_paragraphs
   - ds
+  - entity_browser_entity_form
   - field
+  - field_group
   - media_library
   - menu_ui
   - metatag
   - node
   - page_manager
+  - paragraphs
   - path
   - pathauto
   - rabbit_hole

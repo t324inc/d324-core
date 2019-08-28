@@ -14,7 +14,7 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "processed_text:\n  '#type': processed_text\n  '#text': \"<h3>Get in Touch</h3>\\r\\n\\r\\n<p>We welcome your comments, estimate requests, price inquiries and feedback.</p>\\r\\n\"\n  '#format': ckeditor_full\nname:\n  '#type': textfield\n  '#title': Name\n  '#title_display': invisible\n  '#placeholder': Name\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nphone:\n  '#type': tel\n  '#title': Phone\n  '#title_display': invisible\n  '#placeholder': Phone\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#placeholder': Email\n  '#required': true\n  '#default_value': '[current-user:mail]'\ntype:\n  '#type': select\n  '#title': Type\n  '#title_display': invisible\n  '#options':\n    type_1: 'Type 1'\n    type_2: 'Type 2'\n    type_3: 'Type 3'\n  '#empty_option': Type\n  '#required': true\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#placeholder': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#title_display': invisible\n  '#field_prefix': '<span class=\"w-icon-user\"></span>'\n  '#placeholder': Name\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#field_prefix': '<span class=\"w-icon-email\"></span>'\n  '#placeholder': 'Email Address'\n  '#required': true\n  '#default_value': '[current-user:mail]'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#field_prefix': '<span class=\"w-icon-message\"></span>'\n  '#placeholder': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:
@@ -76,7 +76,7 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: false
+  wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
@@ -216,7 +216,7 @@ handlers:
     handler_id: email_notification
     status: true
     conditions: {  }
-    weight: 1
+    weight: 2
     settings:
       states:
         - completed

@@ -34,10 +34,11 @@ matchers:
   57cdf9dd-9593-4e42-b139-f12286475d65:
     uuid: 57cdf9dd-9593-4e42-b139-f12286475d65
     id: 'entity:node'
-    weight: 0
+    weight: -9
     settings:
-      result_description: 'Node Pages'
+      result_description: 'Content Nodes'
       bundles:
+        basic_page: basic_page
         blog_post: blog_post
         landing_page: landing_page
       group_by_bundle: true
@@ -45,9 +46,9 @@ matchers:
   97258e27-e8a6-4e59-a7c0-21bdb3e8f414:
     uuid: 97258e27-e8a6-4e59-a7c0-21bdb3e8f414
     id: 'entity:file'
-    weight: 0
+    weight: -8
     settings:
-      result_description: 'Direct File Links'
+      result_description: Files
       bundles: null
       group_by_bundle: null
       images:
@@ -57,31 +58,16 @@ matchers:
   545cb4d7-9317-4afd-a32c-a6e339bbdc80:
     uuid: 545cb4d7-9317-4afd-a32c-a6e339bbdc80
     id: 'entity:menu_link_content'
-    weight: 0
+    weight: -10
     settings:
-      result_description: 'Custom Menu Links'
+      result_description: 'Menu Links'
       bundles: {  }
       group_by_bundle: false
-  388eeba8-56ba-4dd6-a107-f81b0c3eb4cf:
-    uuid: 388eeba8-56ba-4dd6-a107-f81b0c3eb4cf
-    id: 'entity:media'
-    weight: 0
-    settings:
-      result_description: 'Media Item Pages'
-      bundles:
-        audio: audio
-        file: file
-        image: image
-        remote_video: remote_video
-        video: video
-      group_by_bundle: true
   adcb0baa-66e9-43a4-ba91-e201999d13bc:
     uuid: adcb0baa-66e9-43a4-ba91-e201999d13bc
     id: 'entity:taxonomy_term'
-    weight: 0
+    weight: -7
     settings:
-      result_description: 'Taxonomy Term Pages'
-      bundles:
-        categories: categories
-        tags: tags
+      result_description: 'Taxonomy Terms'
+      bundles: {  }
       group_by_bundle: true

@@ -2,93 +2,139 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_blog_post_sections
     - field.field.node.blog_post.field_categories
     - field.field.node.blog_post.field_header_image
+    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_meta_tags
+    - field.field.node.blog_post.field_summary
     - field.field.node.blog_post.field_tags
     - node.type.blog_post
+    - responsive_image.styles.de2e_4_1
   module:
+    - blazy
+    - d324_ace
     - ds
     - metatag
     - text
     - user
-    - yoast_seo
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      ds_content:
-        - content_moderation_control
-        - addtoany
-        - field_categories
-        - node_post_date
-        - body
-        - field_tags
-    fields:
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 3
-        label: hidden
-        formatter: ds_post_date_reg_date
 id: node.blog_post.default
 targetEntityType: node
 bundle: blog_post
 mode: default
 content:
-  addtoany:
-    weight: 1
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  body:
-    label: hidden
-    type: text_default
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    region: ds_content
   content_moderation_control:
     weight: 0
-    region: ds_content
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_blog_post_sections:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: d324_ace
+    region: content
   field_categories:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_image:
     weight: 2
     label: hidden
     settings:
-      link: false
+      image_style: ''
+      responsive_image_style: de2e_4_1
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
+      view_mode: default
+      box_caption_custom: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_caption_text: '0'
+        field_media_image: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
     third_party_settings:
       ds:
-        ds_limit: ''
         ft:
           id: default
           settings:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_label
-    region: ds_content
+    type: blazy_media
+    region: content
+  field_meta_tags:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_summary:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_tags:
     type: entity_reference_label
     weight: 5
-    region: ds_content
+    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  addtoany: true
   field_header_image: true
-  links: true

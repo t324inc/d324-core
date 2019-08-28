@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.embedded_google_map.field_description
     - field.field.paragraph.embedded_google_map.field_direction
     - field.field.paragraph.embedded_google_map.field_google_map
     - field.field.paragraph.embedded_google_map.field_google_map_address
@@ -11,19 +10,11 @@ dependencies:
   module:
     - ds
     - styled_google_map
-    - text
 id: paragraph.embedded_google_map.default
 targetEntityType: paragraph
 bundle: embedded_google_map
 mode: default
 content:
-  field_description:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_google_map:
     weight: 1
     label: hidden
@@ -62,7 +53,7 @@ content:
         arrow_position: '50'
         disable_autopan: '1'
         hide_close_button: '0'
-        disable_animation: '0'
+        disable_animation: '1'
         classes:
           content_container: sgmpopup-content-wrapper
           background: sgmpopup-content
@@ -75,9 +66,9 @@ content:
         max: '17'
         min: '5'
       directions:
-        type: SELECTABLE
-        enabled: 0
-        steps: 0
+        enabled: '1'
+        type: DRIVING
+        steps: '1'
       maptypecontrol: '1'
       scalecontrol: '1'
       rotatecontrol: '1'

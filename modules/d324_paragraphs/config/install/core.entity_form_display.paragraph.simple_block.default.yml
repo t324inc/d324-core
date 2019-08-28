@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.simple_block.field_direction
     - field.field.paragraph.simple_block.field_heading
     - field.field.paragraph.simple_block.field_media
+    - field.field.paragraph.simple_block.field_media_display_mode
     - field.field.paragraph.simple_block.field_pre_heading
     - field.field.paragraph.simple_block.field_sub_heading
     - field.field.paragraph.simple_block.field_text_content
@@ -52,6 +53,7 @@ third_party_settings:
       children:
         - field_media
         - field_direction
+        - field_media_display_mode
       parent_name: group_simple_block_tabs
       weight: 22
       format_type: tab
@@ -118,6 +120,12 @@ content:
         - instagram
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_media_display_mode:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_pre_heading:
     weight: 2

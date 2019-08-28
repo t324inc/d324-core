@@ -183,7 +183,9 @@
       },
       "drupal/color_field": {
         "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev":
-        "https://www.drupal.org/files/issues/2018-11-07/no_functionality_of_almost_all_widgets-3002836-7.patch"
+        "https://www.drupal.org/files/issues/2018-11-07/no_functionality_of_almost_all_widgets-3002836-7.patch",
+        "Fix input text field locked":
+        "patches/color_field_fix_locked_text_input_field.patch"
       },
       "drupal/menu_trail_by_path": {
         "Issue #2914746 Fatal error after installing module":

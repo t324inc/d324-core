@@ -2,14 +2,33 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:b21bd1b9-a57e-41f8-a96f-89767b947619'
+    - 'file:file:312e1d94-9953-40f8-a359-a7d2107cea4c'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: embedded_webform
 label: 'Embedded Webform'
-icon_uuid: b21bd1b9-a57e-41f8-a96f-89767b947619
+icon_uuid: 312e1d94-9953-40f8-a359-a7d2107cea4c
 description: 'Embed a Webform into the page'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    enabled: true
+    background_media_field: null
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true
+  ace_paragraph_padding_margin:
+    enabled: true
+  ace_paragraph_text_settings: {  }

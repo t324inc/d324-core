@@ -2,14 +2,33 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:97dcf39d-8e16-4bad-ade3-797039469184'
+    - 'file:file:3f29d0db-2940-4887-8103-0319dc1ce529'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: feature_box
 label: 'Feature Box'
-icon_uuid: 97dcf39d-8e16-4bad-ade3-797039469184
+icon_uuid: 3f29d0db-2940-4887-8103-0319dc1ce529
 description: 'A stylistic two column display that features a media item on one side and freeform content on the other'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    enabled: true
+    background_media_field: field_featured_media
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true
+  ace_paragraph_padding_margin:
+    enabled: true
+  ace_paragraph_text_settings: {  }

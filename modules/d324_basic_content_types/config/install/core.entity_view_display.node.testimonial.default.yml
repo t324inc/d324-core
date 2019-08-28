@@ -15,21 +15,21 @@ bundle: testimonial
 mode: default
 content:
   field_attribution_name:
+    type: string
     weight: 1
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   field_attribution_title:
+    type: string
     weight: 2
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   field_testimonial_quote:
     weight: 0
     label: hidden

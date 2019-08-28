@@ -9,9 +9,9 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    ckeditor_limited: ckeditor_limited
-    ckeditor_full: '0'
-    plain_text: '0'
+    simple_text_editor: simple_text_editor
+    plain_text: plain_text
+    full_text_editor: '0'
 id: paragraph.slide.field_slide_description
 field_name: field_slide_description
 entity_type: paragraph

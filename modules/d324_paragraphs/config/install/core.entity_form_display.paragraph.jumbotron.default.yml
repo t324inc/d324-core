@@ -2,14 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.jumbotron.field_background_color
-    - field.field.paragraph.jumbotron.field_background_color_2
     - field.field.paragraph.jumbotron.field_background_image
     - field.field.paragraph.jumbotron.field_calls_to_actions
     - field.field.paragraph.jumbotron.field_hero_text
     - paragraphs.paragraphs_type.jumbotron
   module:
-    - color_field
     - field_group
     - link_attributes
     - media_library
@@ -18,6 +15,7 @@ third_party_settings:
     group_jumbotron_tabs:
       children:
         - group_jumbotron_content
+        - group_background_image
         - group_background_settings
       parent_name: ''
       weight: 0
@@ -43,11 +41,9 @@ third_party_settings:
         required_fields: true
       label: 'Jumbotron Content'
       region: content
-    group_background_settings:
+    group_background_image:
       children:
         - field_background_image
-        - field_background_color
-        - field_background_color_2
       parent_name: group_jumbotron_tabs
       weight: 21
       format_type: tab
@@ -57,37 +53,13 @@ third_party_settings:
         description: ''
         formatter: closed
         required_fields: true
-      label: 'Background Settings'
+      label: 'Background Image'
       region: content
 id: paragraph.jumbotron.default
 targetEntityType: paragraph
 bundle: jumbotron
 mode: default
 content:
-  field_background_color:
-    type: color_field_widget_spectrum
-    weight: 23
-    region: content
-    settings:
-      show_input: '1'
-      show_palette: '1'
-      palette: '["#333333","#FCFCFC","#005696","#555555","#11689B","#FEC114","#AEBED7","#175088","#F89406","#DC3545","#FEC114","#17A2B8","#28A745","#111111","#F0F0F0","#000000","#FFFFFF"]'
-      show_buttons: '1'
-      allow_empty: '1'
-      show_palette_only: '0'
-    third_party_settings: {  }
-  field_background_color_2:
-    type: color_field_widget_spectrum
-    weight: 24
-    region: content
-    settings:
-      show_input: '1'
-      show_palette: '1'
-      palette: '["#333333","#FCFCFC","#005696","#555555","#11689B","#FEC114","#AEBED7","#175088","#F89406","#DC3545","#FEC114","#17A2B8","#28A745","#111111","#F0F0F0","#000000","#FFFFFF"]'
-      show_buttons: '1'
-      allow_empty: '1'
-      show_palette_only: '0'
-    third_party_settings: {  }
   field_background_image:
     weight: 22
     settings:

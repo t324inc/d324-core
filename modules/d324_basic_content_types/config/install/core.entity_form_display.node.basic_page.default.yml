@@ -2,17 +2,38 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.basic_page.field_ace_sections
+    - field.field.node.basic_page.field_basic_page_sections
     - field.field.node.basic_page.field_header_image
-    - field.field.node.basic_page.field_page_sections
+    - field.field.node.basic_page.field_meta_tags
+    - field.field.node.basic_page.field_summary
     - node.type.basic_page
     - workflows.workflow.content_editing_workflow
   module:
     - content_moderation
     - d324_ace
+    - d324_ace_layouts
+    - entity_browser_entity_form
+    - field_group
     - media_library
-    - paragraphs
+    - metatag
     - path
+    - text
+third_party_settings:
+  field_group:
+    group_header:
+      children:
+        - field_header_image
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Header
+      region: content
 id: node.basic_page.default
 targetEntityType: node
 bundle: basic_page
@@ -20,63 +41,73 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ace_sections:
-    weight: 26
+  field_basic_page_sections:
+    weight: 2
     settings:
       form_mode: default
-      override_labels: false
       label_singular: ''
       label_plural: ''
-      collapsible: false
-      collapsed: false
-      allow_new: true
-      allow_existing: false
+      allow_new: '1'
       match_operator: CONTAINS
+      full_screen_editing: '1'
+      override_labels: 0
+      collapsible: 0
+      collapsed: 0
+      allow_existing: false
       allow_duplicate: false
-      full_screen_editing: false
-      always_show_options_form: false
-    third_party_settings: {  }
+      always_show_options_form: 0
+    third_party_settings:
+      d324_ace_layouts:
+        layout_class_mode: manual
+        layout_class_force: ''
+        layout_class_select: ''
+        region_class_mode: manual
+        region_class_force: ''
+        region_class_select: ''
+        layout_color_mode: manual
+        layout_color_force: ''
+        layout_color_select: ''
+        region_color_mode: manual
+        region_color_force: ''
+        region_color_select: ''
+      entity_browser_entity_form:
+        entity_browser_id: _none
     type: d324_ace_widget
     region: content
   field_header_image:
-    weight: 10
+    type: media_library_widget
+    weight: 3
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
-  field_page_sections:
-    type: paragraphs
-    weight: 2
-    settings:
-      title: 'Page Section'
-      title_plural: 'Page Sections'
-      edit_mode: closed
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: modal
-      form_display_mode: default
-      default_paragraph_type: _none
-      features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
-        add_above: add_above
+  field_meta_tags:
+    weight: 4
+    settings: {  }
     third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_summary:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 13
+    weight: 11
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -84,21 +115,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 9
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 12
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 10
     region: content
     third_party_settings: {  }
   title:
@@ -111,7 +142,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -119,7 +150,8 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 8
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
+hidden: {  }

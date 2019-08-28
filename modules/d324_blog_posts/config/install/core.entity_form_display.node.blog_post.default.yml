@@ -2,69 +2,138 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_blog_post_sections
     - field.field.node.blog_post.field_categories
     - field.field.node.blog_post.field_header_image
+    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_meta_tags
+    - field.field.node.blog_post.field_summary
     - field.field.node.blog_post.field_tags
     - node.type.blog_post
+    - workflows.workflow.content_editing_workflow
   module:
     - content_moderation
+    - d324_ace
+    - entity_browser_entity_form
+    - field_group
     - media_library
     - metatag
     - path
     - text
-    - yoast_seo
+third_party_settings:
+  field_group:
+    group_categories_tags:
+      children:
+        - field_categories
+        - field_tags
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Categories / Tags'
+      region: content
+    group_header:
+      children:
+        - field_header_image
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Header
+      region: content
 id: node.blog_post.default
 targetEntityType: node
 bundle: blog_post
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 7
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_blog_post_sections:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: '1'
+      match_operator: CONTAINS
+      full_screen_editing: '1'
+      override_labels: 0
+      collapsible: 0
+      collapsed: 0
+      allow_existing: false
+      allow_duplicate: false
+      always_show_options_form: 0
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: d324_ace_widget
+    region: content
   field_categories:
-    weight: 9
+    type: options_buttons
+    weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_header_image:
+    type: media_library_widget
     weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 2
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  field_meta_tags:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_summary:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_tags:
-    weight: 10
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   moderation_state:
     type: moderation_state_default
-    weight: 14
+    weight: 15
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -72,21 +141,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 8
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -99,7 +168,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -107,7 +176,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -2,14 +2,33 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:e9e05a7e-2ce9-46e3-836f-02da46268782'
+    - 'file:file:951a1d8a-2268-4854-8adf-901b7f6182ec'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: jumbotron
 label: Jumbotron
-icon_uuid: e9e05a7e-2ce9-46e3-836f-02da46268782
+icon_uuid: 951a1d8a-2268-4854-8adf-901b7f6182ec
 description: 'A prominent, billboard-style vehicle for delivering a short, powerful message'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    enabled: true
+    background_media_field: field_background_image
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true
+  ace_paragraph_padding_margin:
+    enabled: true
+  ace_paragraph_text_settings: {  }

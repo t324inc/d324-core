@@ -5,7 +5,13 @@ dependencies:
     - field.storage.paragraph.field_description
     - paragraphs.paragraphs_type.feature_box
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    simple_text_editor: simple_text_editor
+    plain_text: plain_text
+    full_text_editor: '0'
 id: paragraph.feature_box.field_description
 field_name: field_description
 entity_type: paragraph

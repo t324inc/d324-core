@@ -2,22 +2,100 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.embedded_media.field_caption_position
+    - field.field.paragraph.embedded_media.field_hover_effects
     - field.field.paragraph.embedded_media.field_media
+    - field.field.paragraph.embedded_media.field_media_display_mode
+    - field.field.paragraph.embedded_media.field_media_link
     - paragraphs.paragraphs_type.embedded_media
   module:
+    - field_group
+    - link
     - media_library
+third_party_settings:
+  field_group:
+    group_media_tabs:
+      children:
+        - group_media_item
+        - group_media_options
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Media Tabs'
+      region: content
+    group_media_item:
+      children:
+        - field_media
+        - field_media_display_mode
+      parent_name: group_media_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Media Item'
+      region: content
+    group_media_options:
+      children:
+        - field_media_link
+        - field_caption_position
+        - field_hover_effects
+      parent_name: group_media_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Media Options'
+      region: content
 id: paragraph.embedded_media.default
 targetEntityType: paragraph
 bundle: embedded_media
 mode: default
 content:
+  field_caption_position:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hover_effects:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_media:
+    type: media_library_widget
     weight: 2
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
+  field_media_display_mode:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
+  field_media_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

@@ -2,10 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.embedded_media.field_caption_position
+    - field.field.paragraph.embedded_media.field_hover_effects
     - field.field.paragraph.embedded_media.field_media
+    - field.field.paragraph.embedded_media.field_media_display_mode
+    - field.field.paragraph.embedded_media.field_media_link
     - paragraphs.paragraphs_type.embedded_media
   module:
     - ds
+    - entity_reference_display
 id: paragraph.embedded_media.default
 targetEntityType: paragraph
 bundle: embedded_media
@@ -15,8 +20,9 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: large
+      view_mode: default
       link: false
+      display_field: null
     third_party_settings:
       ds:
         ft:
@@ -25,6 +31,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
+    type: entity_reference_display_default
     region: content
-hidden: {  }
+hidden:
+  field_caption_position: true
+  field_hover_effects: true
+  field_media_display_mode: true
+  field_media_link: true

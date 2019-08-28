@@ -3,8 +3,8 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.landing_page.field_header_image
     - field.field.node.landing_page.field_landing_page_sections
+    - field.field.node.landing_page.field_meta_tags
     - node.type.landing_page
   module:
     - user
@@ -25,7 +25,5 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_header_image: true
   field_landing_page_sections: true
   field_meta_tags: true
-  field_yoast_seo: true

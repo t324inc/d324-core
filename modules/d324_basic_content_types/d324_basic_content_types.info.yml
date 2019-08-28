@@ -4,18 +4,25 @@ type: module
 core: 8.x
 dependencies:
   - advanced_text_formatter
+  - allowed_formats
+  - better_exposed_filters
+  - blazy
   - block
   - block_class
   - block_content
   - content_moderation
   - d324_ace
+  - d324_ace_layouts
+  - d324_blog_posts
   - d324_core
   - d324_paragraphs
   - d324_seo
   - ds
+  - entity_browser_entity_form
   - entity_reference_revisions
   - entityqueue
   - field
+  - field_group
   - file
   - image
   - linkit
@@ -41,6 +48,7 @@ dependencies:
   - tour
   - user
   - views
+  - views_bulk_operations
   - webform
   - workflows
   - yoast_seo

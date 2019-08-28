@@ -19,11 +19,11 @@ content:
       title_plural: Slides
       edit_mode: closed
       closed_mode: summary
-      autocollapse: none
+      autocollapse: all
       closed_mode_threshold: 0
       add_mode: button
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: slide
       features:
         duplicate: duplicate
         collapse_edit_all: collapse_edit_all

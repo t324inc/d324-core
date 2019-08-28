@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:a6f6fac4-a85f-4885-8ede-d4b2935234f1'
+    - 'file:file:959912fb-4931-46d3-bfbb-4a1441ecb563'
   module:
     - d324_ace_paragraph_behaviors
     - paragraphs_library
@@ -11,13 +11,20 @@ third_party_settings:
     allow_library_conversion: true
 id: simple_block
 label: 'Simple Block'
-icon_uuid: a6f6fac4-a85f-4885-8ede-d4b2935234f1
+icon_uuid: 959912fb-4931-46d3-bfbb-4a1441ecb563
 description: 'A simple paragraph block consisting of a heading, sub-heading, text content, link and image'
 behavior_plugins:
   ace_background:
-    enabled: true
-    background_media_field: field_media
-  ace_paragraph_class:
-    enabled: true
+    background_media_field: ''
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class: {  }
   ace_paragraphs_styles:
     groups: {  }
+  ace_paragraph_breakout: {  }
+  ace_paragraph_padding_margin: {  }
+  ace_paragraph_text_settings: {  }

@@ -2,9 +2,19 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:8279d228-e95a-41e0-a3b3-ce00a508bc33'
+    - 'file:file:49e05c60-340b-4025-bc11-9f7ec2d1bcc3'
+  module:
+    - d324_ace_paragraph_behaviors
 id: separator
 label: Separator
-icon_uuid: 8279d228-e95a-41e0-a3b3-ce00a508bc33
+icon_uuid: 49e05c60-340b-4025-bc11-9f7ec2d1bcc3
 description: 'A separator/spacer with optional horizontal divider'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    background_media_field: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true

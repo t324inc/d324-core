@@ -2,9 +2,25 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:e17e0ea8-93e9-4ba5-85e7-954c51e0cc61'
+    - 'file:file:9db2341f-6937-40fa-8b5b-2cf0c5518a13'
+  module:
+    - d324_ace_paragraph_behaviors
 id: slide
 label: Slide
-icon_uuid: e17e0ea8-93e9-4ba5-85e7-954c51e0cc61
+icon_uuid: 9db2341f-6937-40fa-8b5b-2cf0c5518a13
 description: 'A carousel or slideshow slide'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    background_media_field: ''
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout: {  }
+  ace_paragraph_text_settings: {  }

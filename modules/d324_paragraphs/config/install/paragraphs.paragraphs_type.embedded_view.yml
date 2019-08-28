@@ -2,14 +2,33 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:0d4fc8fe-e487-458f-9d08-73ff5053edd6'
+    - 'file:file:d6048c8c-0248-43c3-a9b1-4c08daef55f3'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: embedded_view
 label: 'Embedded View'
-icon_uuid: 0d4fc8fe-e487-458f-9d08-73ff5053edd6
+icon_uuid: d6048c8c-0248-43c3-a9b1-4c08daef55f3
 description: 'Embed a view into the page'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    enabled: true
+    background_media_field: field_background_image
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true
+  ace_paragraph_padding_margin:
+    enabled: true
+  ace_paragraph_text_settings: {  }

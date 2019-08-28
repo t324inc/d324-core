@@ -2,13 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.landing_page.field_ace_sections
-    - field.field.node.landing_page.field_header_image
     - field.field.node.landing_page.field_landing_page_sections
+    - field.field.node.landing_page.field_meta_tags
     - node.type.landing_page
   module:
     - d324_ace
-    - entity_reference_revisions
+    - metatag
     - user
 id: node.landing_page.default
 targetEntityType: node
@@ -16,29 +15,30 @@ bundle: landing_page
 mode: default
 content:
   content_moderation_control:
-    weight: -20
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_ace_sections:
+  field_landing_page_sections:
     weight: 1
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     type: d324_ace
     region: content
-  field_landing_page_sections:
-    type: entity_reference_revisions_entity_view
-    weight: 0
+  field_meta_tags:
+    weight: 2
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
-  field_header_image: true
-  links: true

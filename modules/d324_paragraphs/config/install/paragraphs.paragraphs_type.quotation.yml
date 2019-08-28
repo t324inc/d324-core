@@ -2,14 +2,23 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:107fce04-e95b-4893-bc3d-bffcba075456'
+    - 'file:file:450d6310-bdc2-4a39-b842-8c41c347242c'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: quotation
 label: Quotation
-icon_uuid: 107fce04-e95b-4893-bc3d-bffcba075456
+icon_uuid: 450d6310-bdc2-4a39-b842-8c41c347242c
 description: 'A stylized blockquote or pullquote'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    background_media_field: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true

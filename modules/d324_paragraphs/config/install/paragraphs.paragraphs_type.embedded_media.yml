@@ -2,14 +2,29 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:a0e60aa2-fa4d-4a3a-a702-aa569c2ca8fb'
+    - 'file:file:93a98626-5224-443e-ae81-c3e502e79131'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: embedded_media
 label: 'Embedded Media'
-icon_uuid: a0e60aa2-fa4d-4a3a-a702-aa569c2ca8fb
+icon_uuid: 93a98626-5224-443e-ae81-c3e502e79131
 description: 'A media item to embed into the section'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    background_media_field: ''
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class: {  }
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout: {  }
+  ace_paragraph_padding_margin: {  }
+  ace_paragraph_text_settings: {  }

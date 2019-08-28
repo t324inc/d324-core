@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page.field_basic_page_sections
     - field.field.node.basic_page.field_header_image
-    - field.field.node.basic_page.field_page_sections
+    - field.field.node.basic_page.field_meta_tags
+    - field.field.node.basic_page.field_summary
     - node.type.basic_page
   module:
     - user
@@ -25,5 +27,8 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_basic_page_sections: true
   field_header_image: true
+  field_meta_tags: true
   field_page_sections: true
+  field_summary: true

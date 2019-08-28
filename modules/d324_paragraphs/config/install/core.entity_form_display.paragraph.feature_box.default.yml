@@ -11,10 +11,58 @@ dependencies:
     - paragraphs.paragraphs_type.feature_box
   module:
     - advanced_text_formatter
+    - field_group
     - link
     - link_attributes
     - media_library
     - text
+third_party_settings:
+  field_group:
+    group_feature_box_tabs:
+      children:
+        - group_feature_content
+        - group_feature_media
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Feature Box Tabs'
+      region: content
+    group_feature_content:
+      children:
+        - field_heading
+        - field_description
+        - field_call_to_action_buttons
+        - field_main_link
+        - field_direction
+      parent_name: group_feature_box_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: 'Feature Content'
+      region: content
+    group_feature_media:
+      children:
+        - field_featured_media
+      parent_name: group_feature_box_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Feature Media'
+      region: content
 id: paragraph.feature_box.default
 targetEntityType: paragraph
 bundle: feature_box

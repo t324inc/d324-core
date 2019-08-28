@@ -4,71 +4,106 @@ dependencies:
   config:
     - field.storage.node.field_landing_page_sections
     - node.type.landing_page
-    - paragraphs.paragraphs_type.image_slide
-    - paragraphs.paragraphs_type.side_by_side_column
+    - paragraphs.paragraphs_type.card_deck
+    - paragraphs.paragraphs_type.embedded_google_map
+    - paragraphs.paragraphs_type.embedded_media
+    - paragraphs.paragraphs_type.embedded_view
+    - paragraphs.paragraphs_type.embedded_webform
+    - paragraphs.paragraphs_type.feature_box
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.jumbotron
+    - paragraphs.paragraphs_type.layout_container
+    - paragraphs.paragraphs_type.quotation
+    - paragraphs.paragraphs_type.separator
+    - paragraphs.paragraphs_type.simple_block
+    - paragraphs.paragraphs_type.slideshow
   module:
-    - entity_reference_revisions
+    - d324_ace
 id: node.landing_page.field_landing_page_sections
 field_name: field_landing_page_sections
 entity_type: node
 bundle: landing_page
 label: 'Landing Page Sections'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
+    negate: '0'
     target_bundles:
-      image_slide: image_slide
-      side_by_side_column: side_by_side_column
+      simple_block: simple_block
+      jumbotron: jumbotron
+      card_deck: card_deck
+      slideshow: slideshow
+      feature_box: feature_box
+      quotation: quotation
+      separator: separator
+      embedded_media: embedded_media
+      embedded_webform: embedded_webform
+      embedded_view: embedded_view
+      embedded_google_map: embedded_google_map
+      from_library: from_library
+      layout_container: layout_container
     target_bundles_drag_drop:
       simple_block:
-        weight: -31
-        enabled: false
-      side_by_side_features:
-        weight: -30
-        enabled: false
+        enabled: '1'
+        weight: '-31'
       jumbotron:
-        weight: -29
-        enabled: false
+        enabled: '1'
+        weight: '-30'
+      card_deck:
+        enabled: '1'
+        weight: '-29'
+      slideshow:
+        enabled: '1'
+        weight: '-28'
       feature_box:
-        weight: -28
-        enabled: false
+        enabled: '1'
+        weight: '-27'
       quotation:
-        weight: -27
-        enabled: false
+        enabled: '1'
+        weight: '-26'
       separator:
-        weight: -26
-        enabled: false
+        enabled: '1'
+        weight: '-25'
       embedded_media:
-        weight: -25
-        enabled: false
-      embedded_google_map:
-        weight: -24
-        enabled: false
+        enabled: '1'
+        weight: '-24'
       embedded_webform:
-        weight: -23
-        enabled: false
+        enabled: '1'
+        weight: '-23'
       embedded_view:
-        weight: -22
-        enabled: false
-      breakout_container:
-        weight: -21
-        enabled: false
-      content_columns:
-        weight: -20
-        enabled: false
+        enabled: '1'
+        weight: '-22'
+      embedded_google_map:
+        enabled: '1'
+        weight: '-21'
       from_library:
-        weight: -19
-        enabled: false
-      image_slide:
-        enabled: true
-        weight: -18
-      side_by_side_column:
-        enabled: true
-        weight: -17
-field_type: entity_reference_revisions
+        enabled: '1'
+        weight: '-20'
+      layout_container:
+        enabled: '1'
+        weight: '-19'
+      slide:
+        weight: '-18'
+        enabled: 0
+      card:
+        weight: '-17'
+        enabled: 0
+    layout_bundles: layout_container
+    allowed_layouts:
+      'Columns: 1':
+        layout_onecolumn: 'One Column [1]'
+      'Columns: 2':
+        layout_twocolumn_halves: 'Two Column [1:1]'
+        layout_twocolumn_onethird_twothirds: 'Two Column [1:2]'
+        layout_twocolumn_twothirds_onethird: 'Two Column [2:1]'
+      'Columns: 3':
+        layout_threecolumn_thirds: 'Three Column [1:1:1]'
+        layout_threecolumn_quarter_quarter_half: 'Three Column [1:1:2]'
+        layout_threecolumn_quarter_half_quarter: 'Three Column [1:2:1]'
+        layout_threecolumn_half_quarter_quarter: 'Three Column [2:1:1]'
+field_type: d324_ace_revisioned

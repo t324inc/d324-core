@@ -2,14 +2,33 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:1cb94d53-4a1a-474d-8bbb-21d65d759a6b'
+    - 'file:file:d120639e-b61c-459c-9362-53fedae8e224'
   module:
+    - d324_ace_paragraph_behaviors
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: embedded_google_map
 label: 'Embedded Google Map'
-icon_uuid: 1cb94d53-4a1a-474d-8bbb-21d65d759a6b
+icon_uuid: d120639e-b61c-459c-9362-53fedae8e224
 description: 'A stylish embedded Google Map with extensive customization options, get directions integration, marker dropping and more'
-behavior_plugins: {  }
+behavior_plugins:
+  ace_background:
+    enabled: true
+    background_media_field: null
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
+  ace_paragraph_class:
+    enabled: true
+  ace_paragraphs_styles:
+    groups: {  }
+  ace_paragraph_breakout:
+    enabled: true
+  ace_paragraph_padding_margin:
+    enabled: true
+  ace_paragraph_text_settings: {  }

@@ -3,23 +3,44 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.remote_video.field_caption_text
     - field.field.media.remote_video.field_media_cover_image
-    - field.field.media.remote_video.field_media_in_library
     - field.field.media.remote_video.field_media_oembed_video
+    - image.style.field_preview
     - media.type.remote_video
   module:
+    - advanced_text_formatter
+    - allowed_formats
+    - focal_point
     - media
+    - text
 id: media.remote_video.media_library
 targetEntityType: media
 bundle: remote_video
 mode: media_library
 content:
-  field_media_in_library:
-    type: boolean_checkbox
-    weight: 3
+  field_caption_text:
+    type: text_textarea
+    weight: 4
     region: content
     settings:
-      display_label: true
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+      advanced_text_formatter:
+        show_token_tree: 0
+  field_media_cover_image:
+    type: image_focal_point
+    weight: 2
+    region: content
+    settings:
+      preview_image_style: field_preview
+      preview_link: true
+      offsets: '50,50'
+      progress_indicator: throbber
     third_party_settings: {  }
   field_media_oembed_video:
     type: oembed_textfield
@@ -31,7 +52,7 @@ content:
     region: content
   name:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -46,11 +67,10 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 6
     region: content
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_cover_image: true
   path: true
   uid: true

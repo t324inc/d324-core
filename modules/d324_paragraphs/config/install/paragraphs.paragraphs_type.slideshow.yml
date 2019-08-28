@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:b2d7612d-bb78-4739-ab3a-c0a1ab75c894'
+    - 'file:file:cdbf8bbe-43b5-4f3b-a4c4-74332766ca04'
   module:
     - d324_ace_paragraph_behaviors
     - paragraphs_library
@@ -11,11 +11,17 @@ third_party_settings:
     allow_library_conversion: true
 id: slideshow
 label: Slideshow
-icon_uuid: b2d7612d-bb78-4739-ab3a-c0a1ab75c894
+icon_uuid: cdbf8bbe-43b5-4f3b-a4c4-74332766ca04
 description: 'An embedded animated paragraph slideshow'
 behavior_plugins:
   ace_background:
     background_media_field: ''
+    background_color_1:
+      color: ''
+      opacity: ''
+    background_color_2:
+      color: ''
+      opacity: ''
   ace_paragraph_class:
     enabled: true
   ace_paragraphs_styles:
@@ -23,3 +29,6 @@ behavior_plugins:
     groups:
       slideshow_group:
         default: ace-paragraphs-slideshow-dark
+  ace_paragraph_breakout:
+    enabled: true
+  ace_paragraph_text_settings: {  }

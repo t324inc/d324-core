@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: hero_slider
-label: 'Hero Slider'
-revision: 1
-description: 'A configurable slideshow block to be placed in regions on D324 sites'
