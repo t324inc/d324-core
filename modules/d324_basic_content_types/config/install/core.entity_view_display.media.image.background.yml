@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.background
+    - field.field.media.image.field_caption_text
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.de2e
+  module:
+    - blazy
+    - ds
+id: media.image.background
+targetEntityType: media
+bundle: image
+mode: background
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: de2e
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      ratio: ''
+      box_caption: ''
+      box_caption_custom: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: background
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      box_media_style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: blazy
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_caption_text: true
+  name: true
+  thumbnail: true
+  uid: true

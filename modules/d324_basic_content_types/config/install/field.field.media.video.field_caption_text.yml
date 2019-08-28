@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_caption_text
+    - media.type.video
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    simple_text_editor: simple_text_editor
+    plain_text: plain_text
+    full_text_editor: '0'
+id: media.video.field_caption_text
+field_name: field_caption_text
+entity_type: media
+bundle: video
+label: 'Caption Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

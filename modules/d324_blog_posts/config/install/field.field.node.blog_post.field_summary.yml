@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.blog_post
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    simple_text_editor: simple_text_editor
+    full_text_editor: '0'
+    formatted_string: '0'
+    plain_text: '0'
+id: node.blog_post.field_summary
+field_name: field_summary
+entity_type: node
+bundle: blog_post
+label: Summary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

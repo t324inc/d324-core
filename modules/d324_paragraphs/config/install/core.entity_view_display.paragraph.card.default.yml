@@ -1,0 +1,127 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_formatted_heading
+    - field.field.paragraph.card.field_main_link
+    - field.field.paragraph.card.field_media
+    - field.field.paragraph.card.field_text_content
+    - paragraphs.paragraphs_type.card
+    - responsive_image.styles.d08_standard
+  module:
+    - blazy
+    - ds
+    - link
+    - text
+id: paragraph.card.default
+targetEntityType: paragraph
+bundle: card
+mode: default
+content:
+  field_formatted_heading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: text_default
+    region: content
+  field_main_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: link
+    region: content
+  field_media:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: d08_standard
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
+      view_mode: default
+      box_caption_custom: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_caption_text: '0'
+        field_media_image: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: blazy_media
+    region: content
+  field_text_content:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: text_default
+    region: content
+hidden: {  }
