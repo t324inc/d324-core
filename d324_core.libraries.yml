@@ -2,3 +2,11 @@ header_image:
   css:
     theme:
       css/header_image.css: {}
+
+sal:
+  css:
+    theme:
+      css/sal.css: {}
+  js:
+    js/sal.js: {}
+    js/d324-ace-sal.js: {}
