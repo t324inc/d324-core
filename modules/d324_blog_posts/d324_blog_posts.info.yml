@@ -30,6 +30,5 @@ dependencies:
   - text
   - user
   - views
-  - yoast_seo
 version: 8.x-1.0
 package: D324

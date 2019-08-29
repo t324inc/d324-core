@@ -51,6 +51,5 @@ dependencies:
   - views_bulk_operations
   - webform
   - workflows
-  - yoast_seo
 version: 8.x-1.0
 package: D324

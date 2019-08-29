@@ -10,6 +10,5 @@ dependencies:
   - node
   - pathauto
   - responsive_preview
-  - yoast_seo
 version: 8.x-1.0
 package: D324

@@ -568,11 +568,6 @@ display:
           hide_alter_empty: true
           destination: true
           plugin_id: entity_operations
-        field_yoast_seo:
-          id: field_yoast_seo
-          table: node__field_yoast_seo
-          field: field_yoast_seo
-          type: yoastseo_formatter
       filters:
         status_extra:
           id: status_extra
