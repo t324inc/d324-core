@@ -176,10 +176,6 @@
           "Issue #3025709 Create new revision option is ignored when updating EntityReferenceRevisionsItem":
           "https://www.drupal.org/files/issues/2019-06-27/3025709-30.patch"
       },
-      "drupal/paragraphs": {
-        "Issue #3013171 LogicException Form errors cannot be set after form validation has finished":
-        "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch"
-      },
       "drupal/color_field": {
         "Issue #3002836 No functionality of the Spectrum widget on Drupal 8.6.x with latest stable or dev":
         "https://www.drupal.org/files/issues/2018-11-07/no_functionality_of_almost_all_widgets-3002836-7.patch",
